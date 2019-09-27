@@ -25,11 +25,13 @@ namespace OnlinePortfolio
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/Bootstrap/bootstrap.js"));
 
+            bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
+                      "~/Content/FontAwesome/all.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/Bootstrap/bootstrap.min.css",
                       "~/Content/AnimateCSS/animate.css",
                       "~/Content/HoverCSS/hover.css",
-                      "~/Content/FontAwesome/font-awesome.css",
                       "~/Content/site.css"));
         }
     }

@@ -22,7 +22,7 @@
             <div class="animated wobble delay-2s">
                 <!--Animation:Wobble-->
 
-                <button id="WhoButton" onclick="smoothScroll('KeySkillsTitle')" class="btn py-2 px-3">
+                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
                     <!--FindOutMore-->
                     <span class="h3">Who?!</span>
                 </button><!--/FindOutMore-->
@@ -44,31 +44,50 @@
 </section><!--AboutMeSection-->
 
 
-<section id="KeySkills" class="text-center pt-2 container-fluid">
-    <div class="d-flex align-items-start justify-content-center w-100">
-        <h3 id="KeySkillsTitle" class="display-5 mt-0 pb-2 pt-0 mb-0 text-center d-inline-block">
+<section id="KeySkills" class="text-center pt-3 pb-2">
+    <div class="d-flex align-items-start justify-content-center w-100"><!--HeaderContainer-->
+
+        <h3 id="KeySkillsTitle" class="display-5 mt-0 pb-2 pt-0 mb-0 text-dark text-center d-inline-block"> <!--Header-->
             Key Skills
-        </h3>
+        </h3><!--/Header-->
+
+    </div><!--/HeaderContainer-->
+    <div class="container"><!--BodyContainer-->
+        <div id="IconContainer" class="row pt-0"><!--Row-->
+
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">C# .NET</h3>
+            <h5>Object Oriented Programming</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">SQL Server 2016</h3>
+            <h5>Database Systems Management</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">ASP.NET MVC 5</h3>
+            <h5>Web Application Development</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">Entity Framework</h3>
+            <h5>Object Relational<br/>Mapper</h5>
+        </div>
+
+        </div><!--/Row-->
+    </div><!--/BodyContainer-->
+
+    <div class="col-12 pt-4">
+        <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
+            <!--FindOutMore-->
+            <span class="h3 mb-0">I Need Proof!</span>
+        </button><!--/FindOutMore-->
     </div>
-    <div class="row">
-        <!--Row-->
-        <div class="col-3"><!--Column-->
-            <i class="fas fa-code bg-light w-100"></i>
-        </div><!--/Column-->
-        <div class="col-3">
-            <!--Column-->
-
-        </div><!--/Column-->
-        <div class="col-3">
-            <!--Column-->
-
-        </div><!--/Column-->
-        <div class="col-3">
-            <!--Column-->
-
-        </div><!--/Column-->
-    </div><!--/Row-->
-    <div class="col-12"></div>
 </section>
 
 
