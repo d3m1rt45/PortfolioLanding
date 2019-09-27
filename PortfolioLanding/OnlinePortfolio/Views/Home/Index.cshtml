@@ -2,23 +2,31 @@
     ViewBag.Title = "Alican Demirtas";
 }
 
-<section id="Head" class="d-flex justify-content-center align-items-center"><!--PageHead-->
-    <div class="d-block text-center pb-5"><!--HeadContainer-->
+<section id="Head" class="d-flex justify-content-center align-items-center">
+    <!--PageHead-->
+    <div class="d-block text-center pb-5">
+        <!--HeadContainer-->
 
-        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s"><!--FullName-->
+        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
+            <!--FullName-->
             Alican Demirtas
         </h1><!--/FullName-->
 
-        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s"><!--Profession-->
+        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
+            <!--Profession-->
             .NET Developer
         </h3><!--/Profession-->
 
-        <div class="animated fadeInUp delay-2s mt-5"><!--Animation:FadeInUp-->
-            <div class="animated wobble delay-2s"><!--Animation:Wobble-->
+        <div class="animated fadeInUp delay-2s mt-5">
+            <!--Animation:FadeInUp-->
+            <div class="animated wobble delay-2s">
+                <!--Animation:Wobble-->
 
-                <button id="WhoButton" onclick="FocusNavigationEvent:'#AboutMe'" class="btn py-2 px-3"><!--FindOutMore-->
+                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn py-2 px-3">
+                    <!--WhoButton:Button-->
                     <span class="h3">Who?!</span>
-                </button><!--/FindOutMore-->
+                </button><!--/WhoButton:Button-->
+
 
             </div><!--/Animation:Wobble-->
         </div><!--/Animation:FadeInUp-->
@@ -26,11 +34,41 @@
 </section><!--/PageHead-->
 
 
-<section id="AboutMe"><!--AboutMeSection-->
-    <div class="d-flex container-fluid text-center pb-5"><!--AboutMeContainer-->
+<section id="AboutMe">
+    <!--AboutMeSection-->
+    <div class="d-flex container-fluid text-center pb-5">
+        <!--AboutMeContainer-->
         <h1 class="display-2">
             TODO: AboutMeSection
         </h1>
     </div><!--AboutMeContainer-->
 </section><!--AboutMeSection-->
 
+
+<script type="text/javascript">
+    //WhoButton:Logic
+    window.smoothScroll = function (target) {
+        var MIN_PIXELS_PER_STEP = 16;
+        var MAX_SCROLL_STEPS = 30;
+        var scrollContainer = target;
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            targetY += target.offsetTop;
+        } while (target = target.offsetParent);
+
+        scroll = function (c, a, b, i) {
+            i++; if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function () { scroll(c, a, b, i); }, 20);
+        }
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+</script><!--/WhoButton:Logic-->
