@@ -1,20 +1,26 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿#PageHead {
+    height: 100vh;
+    background-image: url(../Images/bg-pageHead.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+#Profession {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0,0,236,1) 50%, rgba(2,0,36,0) 100%);
+    
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+#WhoButton {
+    color: rgba(0,0,236,1);
+    background-color: #f9f9f9;
 }
+    #WhoButton:hover {
+        color: #f9f9f9;
+        background-color: rgba(0,0,236,1);
+    }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
