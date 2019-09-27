@@ -19,6 +19,9 @@ namespace OnlinePortfolio
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/Modernizr/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/smoothScroll").Include(
+                        "~/Scripts/smooth-scroll.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/Bootstrap/bootstrap.js"));
 
@@ -26,6 +29,7 @@ namespace OnlinePortfolio
                       "~/Content/Bootstrap/bootstrap.min.css",
                       "~/Content/AnimateCSS/animate.css",
                       "~/Content/HoverCSS/hover.css",
+                      "~/Content/FontAwesome/font-awesome.css",
                       "~/Content/site.css"));
         }
     }

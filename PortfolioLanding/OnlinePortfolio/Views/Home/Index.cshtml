@@ -22,21 +22,20 @@
             <div class="animated wobble delay-2s">
                 <!--Animation:Wobble-->
 
-                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn py-2 px-3">
-                    <!--WhoButton:Button-->
+                <button id="WhoButton" onclick="smoothScroll('KeySkillsTitle')" class="btn py-2 px-3">
+                    <!--FindOutMore-->
                     <span class="h3">Who?!</span>
-                </button><!--/WhoButton:Button-->
-
+                </button><!--/FindOutMore-->
 
             </div><!--/Animation:Wobble-->
         </div><!--/Animation:FadeInUp-->
     </div>
 </section><!--/PageHead-->
 
-
+@*TODO: FINISH AboutMe SECTION*@
 <section id="AboutMe">
     <!--AboutMeSection-->
-    <div class="d-flex container-fluid text-center pb-5">
+    <div class="d-flex container-fluid text-center pb-5 align-items-center justify-content-center">
         <!--AboutMeContainer-->
         <h1 class="display-2">
             TODO: AboutMeSection
@@ -45,30 +44,34 @@
 </section><!--AboutMeSection-->
 
 
-<script type="text/javascript">
-    //WhoButton:Logic
-    window.smoothScroll = function (target) {
-        var MIN_PIXELS_PER_STEP = 16;
-        var MAX_SCROLL_STEPS = 30;
-        var scrollContainer = target;
-        do { //find scroll container
-            scrollContainer = scrollContainer.parentNode;
-            if (!scrollContainer) return;
-            scrollContainer.scrollTop += 1;
-        } while (scrollContainer.scrollTop == 0);
+<section id="KeySkills" class="text-center pt-2 container-fluid">
+    <div class="d-flex align-items-start justify-content-center w-100">
+        <h3 id="KeySkillsTitle" class="display-5 mt-0 pb-2 pt-0 mb-0 text-center d-inline-block">
+            Key Skills
+        </h3>
+    </div>
+    <div class="row">
+        <!--Row-->
+        <div class="col-3"><!--Column-->
+            <i class="fas fa-code bg-light w-100"></i>
+        </div><!--/Column-->
+        <div class="col-3">
+            <!--Column-->
 
-        var targetY = 0;
-        do { //find the top of target relatively to the container
-            if (target == scrollContainer) break;
-            targetY += target.offsetTop;
-        } while (target = target.offsetParent);
+        </div><!--/Column-->
+        <div class="col-3">
+            <!--Column-->
 
-        scroll = function (c, a, b, i) {
-            i++; if (i > 30) return;
-            c.scrollTop = a + (b - a) / 30 * i;
-            setTimeout(function () { scroll(c, a, b, i); }, 20);
-        }
-        // start scrolling
-        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    }
-</script><!--/WhoButton:Logic-->
+        </div><!--/Column-->
+        <div class="col-3">
+            <!--Column-->
+
+        </div><!--/Column-->
+    </div><!--/Row-->
+    <div class="col-12"></div>
+</section>
+
+
+
+
+

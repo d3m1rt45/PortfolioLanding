@@ -24,6 +24,18 @@
 
 /*AboutSection*/
 #AboutMe {
-    height: 100vh;
+    height: 70vh;
     background-color: #f9f9f9;
+}
+
+#KeySkills {
+    height: 30vh;
+    background-color: #00042b;
+}
+
+#KeySkillsTitle {
+    color: #00042b;
+    background: rgb(2,0,0);
+    background: linear-gradient(90deg, rgba(2,0,0,0) 0%, rgba(249,249,249,0.5018382352941176) 50%, rgba(2,0,36,0) 100%);
+    width: 35%;
 }
