@@ -1,30 +1,29 @@
-﻿#PageHead {
+﻿/*HeadSection*/
+#Head {
     height: 100vh;
     background-image: url(../Images/bg-pageHead.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 0;
 }
 
 #Profession {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0,0,236,1) 50%, rgba(2,0,36,0) 100%);
-    
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0,4,43,1) 30%, rgba(0,4,43,1) 70%, rgba(2,0,36,0) 100%);
 }
 
 #WhoButton {
-    color: rgba(0,0,236,1);
+    color: #00042b;
     background-color: #f9f9f9;
 }
     #WhoButton:hover {
         color: #f9f9f9;
-        background-color: rgba(0,0,236,1);
+        background-color: #00042b;
+        outline-color:#f9f9f9;
     }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/*AboutSection*/
+#AboutMe {
+    height: 100vh;
+    background-color: #f9f9f9;
 }

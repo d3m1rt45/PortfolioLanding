@@ -2,25 +2,35 @@
     ViewBag.Title = "Alican Demirtas";
 }
 
-<div id="PageHead" class="d-flex justify-content-center align-items-center"><!--PageHead-->
-    <div class="d-block text-center pb-5">
-        <!--HeadContainer-->
+<section id="Head" class="d-flex justify-content-center align-items-center"><!--PageHead-->
+    <div class="d-block text-center pb-5"><!--HeadContainer-->
 
-        <h1 class="text-light display-1 font-weight-bold mb-0 animated bounceInLeft">
-            <!--FullName-->
+        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s"><!--FullName-->
             Alican Demirtas
         </h1><!--/FullName-->
 
-        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated bounceInRight">
-            <!--Profession-->
+        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s"><!--Profession-->
             .NET Developer
         </h3><!--/Profession-->
 
-            <div class="animated fadeInUpBig delay-1s">
-                <button id="WhoButton" class="btn btn-outline-dark mt-4 py-2 px-4 animated wobble delay-2s hvr-bounce-to-bottom">
-                    <!--FindOutMore-->
+        <div class="animated fadeInUp delay-2s mt-5"><!--Animation:FadeInUp-->
+            <div class="animated wobble delay-2s"><!--Animation:Wobble-->
+
+                <button id="WhoButton" onclick="FocusNavigationEvent:'#AboutMe'" class="btn py-2 px-3"><!--FindOutMore-->
                     <span class="h3">Who?!</span>
                 </button><!--/FindOutMore-->
-            </div>
-        </div>
-</div><!--/PageHead-->
+
+            </div><!--/Animation:Wobble-->
+        </div><!--/Animation:FadeInUp-->
+    </div>
+</section><!--/PageHead-->
+
+
+<section id="AboutMe"><!--AboutMeSection-->
+    <div class="d-flex container-fluid text-center pb-5"><!--AboutMeContainer-->
+        <h1 class="display-2">
+            TODO: AboutMeSection
+        </h1>
+    </div><!--AboutMeContainer-->
+</section><!--AboutMeSection-->
+
