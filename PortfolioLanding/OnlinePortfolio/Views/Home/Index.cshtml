@@ -1,31 +1,96 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Alican Demirtas";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<section id="Head" class="d-flex justify-content-center align-items-center">
+    <!--PageHead-->
+    <div class="d-block text-center pb-5">
+        <!--HeadContainer-->
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
+            <!--FullName-->
+            Alican Demirtas
+        </h1><!--/FullName-->
+
+        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
+            <!--Profession-->
+            .NET Developer
+        </h3><!--/Profession-->
+
+        <div class="animated fadeInUp delay-2s mt-5">
+            <!--Animation:FadeInUp-->
+            <div class="animated wobble delay-2s">
+                <!--Animation:Wobble-->
+
+                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
+                    <!--FindOutMore-->
+                    <span class="h3">Who?!</span>
+                </button><!--/FindOutMore-->
+
+            </div><!--/Animation:Wobble-->
+        </div><!--/Animation:FadeInUp-->
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</section><!--/PageHead-->
+
+@*TODO: FINISH AboutMe SECTION*@
+<section id="AboutMe">
+    <!--AboutMeSection-->
+    <div class="d-flex container-fluid text-center pb-5 align-items-center justify-content-center">
+        <!--AboutMeContainer-->
+        <h1 class="display-2">
+            TODO: AboutMeSection
+        </h1>
+    </div><!--AboutMeContainer-->
+</section><!--AboutMeSection-->
+
+
+<section id="KeySkills" class="text-center pt-3 pb-2">
+    <div class="d-flex align-items-start justify-content-center w-100"><!--HeaderContainer-->
+
+        <h3 id="KeySkillsTitle" class="display-5 mt-0 pb-2 pt-0 mb-0 text-dark text-center d-inline-block"> <!--Header-->
+            Key Skills
+        </h3><!--/Header-->
+
+    </div><!--/HeaderContainer-->
+    <div class="container"><!--BodyContainer-->
+        <div id="IconContainer" class="row pt-0"><!--Row-->
+
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">C# .NET</h3>
+            <h5>Object Oriented Programming</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">SQL Server 2016</h3>
+            <h5>Database Systems Management</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">ASP.NET MVC 5</h3>
+            <h5>Web Application Development</h5>
+        </div>
+        
+        <div class="col-3 text-light"><!--KeySkill-->
+            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">Entity Framework</h3>
+            <h5>Object Relational<br/>Mapper</h5>
+        </div>
+
+        </div><!--/Row-->
+    </div><!--/BodyContainer-->
+
+    <div class="col-12 pt-4">
+        <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
+            <!--FindOutMore-->
+            <span class="h3 mb-0">I Need Proof!</span>
+        </button><!--/FindOutMore-->
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</section>
+
+
+
+
+
