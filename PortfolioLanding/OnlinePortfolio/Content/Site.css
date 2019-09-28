@@ -13,12 +13,10 @@
 }
 
 #WhoButton {
-    color: #00042b;
-    background-color: #f9f9f9;
+    background-color: #232325;
 }
     #WhoButton:hover {
-        color: #f9f9f9;
-        background-color: #1f4c52;
+        background-color: #f7f7f7;
     }
 
 /*AboutSection*/
@@ -41,11 +39,11 @@
     width: 35%;
 }
 
-#ProofButton {
+/*#ProofButton {
     color: #00042b;
     background-color: #f9f9f9;
 }
 #ProofButton:hover {
     color: #f9f9f9;
     background-color: #1f4c52;
-}
+}*/

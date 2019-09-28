@@ -22,7 +22,7 @@
             <div class="animated wobble delay-2s">
                 <!--Animation:Wobble-->
 
-                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
+                <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-outline-light py-2 px-3">
                     <!--FindOutMore-->
                     <span class="h3">Who?!</span>
                 </button><!--/FindOutMore-->
@@ -31,6 +31,8 @@
         </div><!--/Animation:FadeInUp-->
     </div>
 </section><!--/PageHead-->
+
+
 
 @*TODO: FINISH AboutMe SECTION*@
 <section id="AboutMe" class="my-5 py-5">
@@ -44,54 +46,65 @@
 </section><!--AboutMeSection-->
 
 
-<section id="KeySkills" class="text-center pt-3 pb-2">
-    <div class="d-flex align-items-start justify-content-center w-100"><!--HeaderContainer-->
 
-        <h3 id="KeySkillsTitle" class="display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center d-inline-block"> <!--Header-->
+<section id="KeySkills" class="text-center pt-3 pb-2 container-fluid">
+
+    <div id="IconContainer" class="row pt-0">
+        <!--Row-->
+        <h3 id="KeySkillsTitle" class="col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center">
+            <!--Header-->
             Key Skills
         </h3><!--/Header-->
+        <div class="col-xl-4 col-3"></div>
 
-    </div><!--/HeaderContainer-->
-    <div class="container-fluid"><!--BodyContainer-->
-        <div id="IconContainer" class="row pt-0"><!--Row-->
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--HtmlCssJs-->
+            <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-2">HTML / CSS / JS</h3>
+            <h6>Web Development Fundamentals</h6>
+        </div><!--/HtmlCssJs-->
 
-            <div class="d-none d-lg-block col-xl-2 offset-1 text-light"><!--HtmlCssJs-->
-                <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-                <h3 class="mb-1">HTML / CSS / JS</h3>
-                <h6 class="d-none d-lg-block">Web Development Fundamentals</h6>
-            </div><!--/HtmlCssJs-->
-        
-            <div class="col-xl-2 text-light"><!--C#.Net-->
-                <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-                <h3 class="mb-1">C# .NET</h3>
-                <h6 class="d-none d-lg-block">Object Oriented Programming</h6>
-            </div><!--/C#.Net-->
-        
-            <div class="col-xl-2 text-light"><!--Asp.NetMvc5-->
-                <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-                <h3 class="mb-1">ASP.NET MVC 5</h3>
-                <h6 class="d-none d-lg-block">Model-View-Controller Pattern</h6>
-            </div><!--/Asp.NetMvc5-->
-        
-            <div class="col-xl-2 text-light"><!--SqlServer2016-->
-                <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-                <h3 class="mb-1">SQL Server 2016</h3>
-                <h6 class="d-none d-lg-block">Relational Database Development</h6>
-            </div><!--/SqlServer2016-->
-        
-            <div class="d-none d-lg-block col-xl-2 text-light"><!--EntityFramework-->
-                <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-                <h3 class="mb-1">Entity Framework</h3>
-                <h6 class="d-none d-lg-block">Object Relational Mapping</h6>
-            </div><!--/EntityFramework-->
-        
-            </div><!--/Row-->
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--C#.Net-->
+            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-1">C# .NET</h3>
+            <h6>Object Oriented Programming</h6>
+        </div><!--/C#.Net-->
 
-        <button id="ProofButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3 mt-4 mb-3"> <!--FindOutMore-->
-            <span class="h3 mb-0">I Need Proof!</span>
-        </button><!--/FindOutMore-->
-    
-    </div><!--/BodyContainer-->
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--Asp.NetMvc5-->
+            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-2">ASP.NET MVC 5</h3>
+            <h6>Model-View-Controller Pattern</h6>
+        </div><!--/Asp.NetMvc5-->
+
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--SqlServer2016-->
+            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-2">SQL Server 2016</h3>
+            <h6>Relational Database Development</h6>
+        </div><!--/SqlServer2016-->
+
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--EntityFramework-->
+            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-2">Entity Framework</h3>
+            <h6>Object Relational Mapping</h6>
+        </div><!--/EntityFramework-->
+
+        <div class="col-6 col-md-4 col-xl-2 text-light">
+            <!--Bootstrap4-->
+            <i id="SkillIcon" class="fab fa-bootstrap fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+            <h3 class="mb-2">Bootstrap 4</h3>
+            <h6>Mobile-First Responsive Design</h6>
+        </div><!--/Bootstrap4-->
+
+    </div><!--/Row-->
+        
+    <button id="ProofButton" onclick="smoothScroll('AboutMe')" class="btn btn-outline-light py-2 px-3 mt-5 mb-4 d-inline-block">
+        <!--FindOutMore-->
+        <span class="h3 mb-0">I Need Proof!</span>
+    </button><!--/FindOutMore-->
 </section>
 
 
