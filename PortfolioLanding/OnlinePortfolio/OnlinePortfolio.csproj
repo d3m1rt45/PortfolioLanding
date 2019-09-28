@@ -1719,6 +1719,7 @@
     <Content Include="Scripts\jQuery\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jQuery\jquery.min.map" />
     <Content Include="Scripts\jQuery\jquery.slim.min.map" />
+    <Content Include="Scripts\zenscroll.js" />
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
