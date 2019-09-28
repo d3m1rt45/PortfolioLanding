@@ -33,11 +33,11 @@
 </section><!--/PageHead-->
 
 @*TODO: FINISH AboutMe SECTION*@
-<section id="AboutMe">
+<section id="AboutMe" class="my-5 py-5">
     <!--AboutMeSection-->
-    <div class="d-flex container-fluid text-center pb-5 align-items-center justify-content-center">
+    <div class="d-flex container-fluid text-center py-5 my-5 align-items-center justify-content-center">
         <!--AboutMeContainer-->
-        <h1 class="display-2">
+        <h1 class="display-2 py-5 my-5">
             TODO: AboutMeSection
         </h1>
     </div><!--AboutMeContainer-->
@@ -55,45 +55,43 @@
     <div class="container-fluid"><!--BodyContainer-->
         <div id="IconContainer" class="row pt-0"><!--Row-->
 
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">C# .NET</h3>
-        </div>
+            <div class="d-none d-lg-block col-xl-2 offset-1 text-light"><!--HtmlCssJs-->
+                <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+                <h3 class="mb-1">HTML / CSS / JS</h3>
+                <h6 class="d-none d-lg-block">Web Development Fundamentals</h6>
+            </div><!--/HtmlCssJs-->
         
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">C# .NET</h3>
-        </div>
+            <div class="col-xl-2 text-light"><!--C#.Net-->
+                <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+                <h3 class="mb-1">C# .NET</h3>
+                <h6 class="d-none d-lg-block">Object Oriented Programming</h6>
+            </div><!--/C#.Net-->
         
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">SQL Server 2016</h3>
-        </div>
+            <div class="col-xl-2 text-light"><!--Asp.NetMvc5-->
+                <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+                <h3 class="mb-1">ASP.NET MVC 5</h3>
+                <h6 class="d-none d-lg-block">Model-View-Controller Pattern</h6>
+            </div><!--/Asp.NetMvc5-->
         
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">ASP.NET MVC 5</h3>
-        </div>
+            <div class="col-xl-2 text-light"><!--SqlServer2016-->
+                <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+                <h3 class="mb-1">SQL Server 2016</h3>
+                <h6 class="d-none d-lg-block">Relational Database Development</h6>
+            </div><!--/SqlServer2016-->
         
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">Entity Framework</h3>
-        </div>
+            <div class="d-none d-lg-block col-xl-2 text-light"><!--EntityFramework-->
+                <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
+                <h3 class="mb-1">Entity Framework</h3>
+                <h6 class="d-none d-lg-block">Object Relational Mapping</h6>
+            </div><!--/EntityFramework-->
         
-        <div class="col-2 text-light"><!--KeySkill-->
-            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">Entity Framework</h3>
-        </div>
+            </div><!--/Row-->
 
-        </div><!--/Row-->
-    </div><!--/BodyContainer-->
-
-    <div class="col-12 pt-4">
-        <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3">
-            <!--FindOutMore-->
+        <button id="ProofButton" onclick="smoothScroll('AboutMe')" class="btn btn-light py-2 px-3 mt-4 mb-3"> <!--FindOutMore-->
             <span class="h3 mb-0">I Need Proof!</span>
         </button><!--/FindOutMore-->
-    </div>
+    
+    </div><!--/BodyContainer-->
 </section>
 
 
