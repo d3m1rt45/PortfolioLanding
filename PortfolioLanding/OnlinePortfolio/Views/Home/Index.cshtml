@@ -2,25 +2,20 @@
     ViewBag.Title = "Alican Demirtas";
 }
 
-<section id="Head" class="d-flex justify-content-center align-items-center">
-    <!--PageHead-->
-    <div class="d-block text-center pb-5">
-        <!--HeadContainer-->
+@* SECTION: PageHead *@
+<section id="Head" class="d-flex justify-content-center align-items-center"><!--PageHead-->
+    <div class="d-block text-center pb-5"><!--HeadContainer-->
 
-        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
-            <!--FullName-->
+        <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s"><!--FullName-->
             Alican Demirtas
         </h1><!--/FullName-->
 
-        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
-            <!--Profession-->
+        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s"><!--Profession-->
             .NET Developer
         </h3><!--/Profession-->
 
-        <div class="animated fadeInUp delay-2s mt-5">
-            <!--Animation:FadeInUp-->
-            <div class="animated wobble delay-2s">
-                <!--Animation:Wobble-->
+        <div class="animated fadeInUp delay-2s mt-5"><!--Animation:FadeInUp-->
+            <div class="animated wobble delay-2s"><!--Animation:Wobble-->
 
                 <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-outline-light py-2 px-3">
                     <!--FindOutMore-->
@@ -29,22 +24,19 @@
 
             </div><!--/Animation:Wobble-->
         </div><!--/Animation:FadeInUp-->
-    </div>
+    </div><!--/HeadContainer-->
 </section><!--/PageHead-->
 
-
-
 @* SECTION: AboutMe *@
-<section id="AboutMe" class="py-5 container">
-    <!--SectionContainer-->
-    <div class="row text-center mb-3 mt-5">
-        <!--Row-->
-        <div id="ImageContainer" class="col-12 mb-5">
-            <!--ImageContainer-->
-            <i class="far fa-user-circle fa-10x"></i>
-        </div><!--ImageContainer-->
+<section id="AboutMe" class="py-5 container"><!--AboutMeContainer-->
+    <div class="row text-center mb-3 mt-5"><!--Row-->
+        <div id="ImageContainer" class="col-12 mb-5"><!--ImageContainer-->
 
-        <div id="BioContainer" class="offset-1 col-10 lead">
+            <i class="far fa-user-circle fa-10x"></i><!--Image/(TODO:InsertPicture)-->
+
+        </div><!--/ImageContainer-->
+        <div id="BioContainer" class="offset-1 col-10 lead"><!--BioContainer(TODO:InserBio)-->
+
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
@@ -52,77 +44,194 @@
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
             Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
-        </div>
-        <div class="col-12">
-            <button id="CVButton" onclick="#TODO:DOWNLOAD CV#" class="btn btn-outline-dark py-2 px-3 mt-5 mx-auto">
-                <!--FindOutMore-->
-                <span class="h3 mb-0">I Need to Know More!</span>
-            </button><!--/FindOutMore-->
-        </div>
+        
+        </div><!--/Bio-->
+
+        <div class="col-12"><!--CvButtonContainer-->
+            <button id="CVButton" onclick="#TODO:DOWNLOAD CV#" class="btn btn-outline-dark py-2 px-3 mt-5 mx-auto"><!--DownloadCvButton-->
+                <span class="h3 mb-0">I Need to Know More!</span><!--ButonText/-->
+            </button><!--DownloadCvButton-->
+        </div><!--/CvButtonContainer-->
     </div><!--/Row-->
     
-</section><!--/SectionContainer-->
+</section><!--/AboutMeContainer-->
 
+@* SECTION: KeySkills *@
+<section id="KeySkills" class="text-center pt-3 pb-2 container-fluid"><!--KeySkillsContainer-->
+    <div id="IconContainer" class="row pt-0"><!--Row-->
 
+        <h3 id="KeySkillsTitle" class="col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center"><!--TitleContainer-->
+            Key Skills<!--SectionTitle/-->
+        </h3><!--/TitleContainer-->
+        <div class="col-xl-4 col-3"></div><!--ColumnFiller/-->
 
-<section id="KeySkills" class="text-center pt-3 pb-2 container-fluid">
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#1-->
+            <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-2">HTML / CSS / JS</h3><!--Name/-->
+            <h6>Web Development Fundamentals</h6><!--Description/-->
+        </div><!--/KeySkill#1-->
 
-    <div id="IconContainer" class="row pt-0">
-        <!--Row-->
-        <h3 id="KeySkillsTitle" class="col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center">
-            <!--Header-->
-            Key Skills
-        </h3><!--/Header-->
-        <div class="col-xl-4 col-3"></div>
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#2-->
+            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-1">C# .NET</h3><!--Name/-->
+            <h6>Object Oriented Programming</h6><!--Description/-->
+        </div><!--/KeySkill#2-->
 
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--HtmlCssJs-->
-            <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-2">HTML / CSS / JS</h3>
-            <h6>Web Development Fundamentals</h6>
-        </div><!--/HtmlCssJs-->
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#3-->
+            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-2">ASP.NET MVC 5</h3><!--Name/-->
+            <h6>Model-View-Controller Pattern</h6><!--Description/-->
+        </div><!--/KeySkill#3-->
 
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--C#.Net-->
-            <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-1">C# .NET</h3>
-            <h6>Object Oriented Programming</h6>
-        </div><!--/C#.Net-->
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#4-->
+            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-2">SQL Server 2016</h3><!--Name/-->
+            <h6>Relational Database Development</h6><!--Description/-->
+        </div><!--/KeySkill#4-->
 
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--Asp.NetMvc5-->
-            <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-2">ASP.NET MVC 5</h3>
-            <h6>Model-View-Controller Pattern</h6>
-        </div><!--/Asp.NetMvc5-->
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#5-->
+            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-2">Entity Framework</h3><!--Name/-->
+            <h6>Object Relational Mapping</h6><!--Description/-->
+        </div><!--KeySkill#5-->
 
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--SqlServer2016-->
-            <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-2">SQL Server 2016</h3>
-            <h6>Relational Database Development</h6>
-        </div><!--/SqlServer2016-->
-
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--EntityFramework-->
-            <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-2">Entity Framework</h3>
-            <h6>Object Relational Mapping</h6>
-        </div><!--/EntityFramework-->
-
-        <div class="col-6 col-md-4 col-xl-2 text-light">
-            <!--Bootstrap4-->
-            <i id="SkillIcon" class="fab fa-bootstrap fa-7x mt-4 px-4 pb-3 rounded-circle "></i>
-            <h3 class="mb-2">Bootstrap 4</h3>
-            <h6>Mobile-First Responsive Design</h6>
-        </div><!--/Bootstrap4-->
+        <div class="col-6 col-md-4 col-xl-2 text-light"><!--KeySkill#6-->
+            <i id="SkillIcon" class="fab fa-bootstrap fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
+            <h3 class="mb-2">Bootstrap 4</h3><!--Name/-->
+            <h6>Mobile-First Responsive Design</h6><!--Description-->
+        </div><!--/KeySkill#6-->
 
     </div><!--/Row-->
         
-    <button id="ProofButton" onclick="smoothScroll('AboutMe')" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 d-inline-block">
+    <button id="ProofButton" onclick="smoothScroll('Projects')" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 d-inline-block">
         <!--FindOutMore-->
         <span class="h3 mb-0">I Need Proof!</span>
     </button><!--/FindOutMore-->
+
+</section><!--/KeySkillsContainer-->
+
+@* SECTION: Projects *@
+<section id="Projects" class="py-5"><!--ProjectsContainer-->
+    <div class="container">
+        <div class="row"><!--Row-->
+
+            <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center"><!--TitleColumn-->
+                <h3 id="ProjectsTitle" class="display-4 mt-5 pb-2 font-weight-bold"><!--SectionTitle-->
+                    Recent Projects
+                </h3><!--/SectionTitle-->
+            </div><!--/TitleColumn--><div class="col-md-2 col-xl-3"></div><!--Filler-->
+        
+            <div class="col-10 offset-1 mt-4"><!--Project#1Column-->
+                <div class="row"><!--NestedRow-->
+                    <div class="col-12 col-xl-4 bg-dark"><!--ImageColumn-->
+
+                        <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+                    
+                    </div><!--/ImageColumn-->
+                    <div class="col-12 col-xl-8 bg-light"><!--Column-->
+                        
+                        <p class="lead"><!--ProjectDescription/(TODO:InsertDescription)-->
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/ProjectDescription-->
+
+                    </div><!--/Column-->
+                </div><!--/NestedRow-->
+            </div><!--/Project#1Column-->
+
+            <div class="col-10 offset-1 mt-4"><!--Project#2-->
+                <div class="row"><!--NestedRow-->
+                    <div class="col-12 d-xl-none bg-dark"><!--ImageColumn[DisplayedBelowXL]-->
+
+                            <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+
+                    </div><!--/ImageColumn[DisplayedBelowXL]-->
+
+                    <div class="col-12 col-xl-8 bg-primary bg-light"><!--DescriptionColumn-->
+
+                        <p class="lead"><!--ProjectDescription/(TODO:InsertDescription)-->
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/ProjectDescription-->
+
+                    </div><!--/DescriptionColumn-->
+
+                    <div class="d-none d-xl-inline-block col-12 col-xl-4 bg-dark"><!--ImageColumn[DisplayedAtXL]-->
+
+                            <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+
+                    </div><!--/ImageColumn[DisplayedAtXL]-->
+                </div><!--/NestedRow-->
+            </div><!--/Project#2-->
+            
+            <div class="col-10 offset-1 mt-4"><!--Project#1Column-->
+                <div class="row"><!--NestedRow-->
+                    <div class="col-12 col-xl-4 bg-dark"><!--ImageColumn-->
+
+                        <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+                    
+                    </div><!--/ImageColumn-->
+                    <div class="col-12 col-xl-8 bg-light"><!--Column-->
+                        
+                        <p class="lead"><!--ProjectDescription/(TODO:InsertDescription)-->
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/ProjectDescription-->
+
+                    </div><!--/Column-->
+                </div><!--/NestedRow-->
+            </div><!--/Project#1Column-->
+
+            <div class="col-10 offset-1 mt-4"><!--Project#2-->
+                <div class="row"><!--NestedRow-->
+                    <div class="col-12 d-xl-none bg-dark"><!--ImageColumn[DisplayedBelowXL]-->
+
+                            <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+
+                    </div><!--/ImageColumn[DisplayedBelowXL]-->
+
+                    <div class="col-12 col-xl-8 bg-primary bg-light"><!--DescriptionColumn-->
+
+                        <p class="lead"><!--ProjectDescription/(TODO:InsertDescription)-->
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/ProjectDescription-->
+
+                    </div><!--/DescriptionColumn-->
+
+                    <div class="d-none d-xl-inline-block col-12 col-xl-4 bg-dark"><!--ImageColumn[DisplayedAtXL]-->
+
+                            <i class="fab fa-algolia fa-10x text-light"></i><!--Image/(TODO:InsertImage)-->
+
+                    </div><!--/ImageColumn[DisplayedAtXL]-->
+                </div><!--/NestedRow-->
+            </div><!--/Project#2-->
+        </div><!--/Row-->
+    </div>
 </section>
 
 
