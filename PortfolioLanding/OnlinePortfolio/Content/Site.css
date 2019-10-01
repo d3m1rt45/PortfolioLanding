@@ -24,6 +24,12 @@
     background-color: #f9f9f9;
 }
 
+#Portrait{
+    height: 10em;
+    width:10em;
+    background: yellow;
+}
+
 /*KeySkillsSection*/
 #KeySkills {
     background-image: url(../Images/bg-keySkills.jpg);
