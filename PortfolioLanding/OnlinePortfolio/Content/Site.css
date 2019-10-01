@@ -66,3 +66,28 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
 }
+
+/* Contact Section */
+#ContactSocial {
+    background-image: url(../Images/bg-contact.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#IconContainer {
+    width: 5em;
+    height: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #f9f9f9;
+}
+
+#IconSocial {
+    color: #1f4c52;
+}
+
+#ContactSocial .container {
+    background: rgb(13,13,13);
+    background: linear-gradient(90deg, rgba(13,13,13,0) 0%, rgba(31,76,82,1) 25%, rgba(31,76,82,1) 75%, rgba(13,13,13,0) 100%);
+}

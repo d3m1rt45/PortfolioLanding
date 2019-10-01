@@ -1694,6 +1694,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\bg-callout.jpg" />
+    <Content Include="Images\bg-contact.jpg" />
     <Content Include="Images\bg-pageHeadzz.jpg" />
     <Content Include="Images\bg-pageHead.jpg" />
     <Content Include="Images\bg-keySkills.jpg" />
