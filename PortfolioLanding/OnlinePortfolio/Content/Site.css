@@ -68,26 +68,20 @@
 }
 
 /* Contact Section */
-#ContactSocial {
-    background-image: url(../Images/bg-contact.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 #IconContainer {
     width: 5em;
     height: 5em;
     margin-left: 1em;
     margin-right: 1em;
+    color: #1f4c52;
     background-color: #f9f9f9;
 }
+    #IconContainer a {
+        color: #1f4c52;
+    }
 
-#IconSocial {
-    color: #1f4c52;
-}
-
-#ContactSocial .container {
-    background: rgb(13,13,13);
-    background: linear-gradient(90deg, rgba(13,13,13,0) 0%, rgba(31,76,82,1) 25%, rgba(31,76,82,1) 75%, rgba(13,13,13,0) 100%);
+#ContactSocial {
+    background: rgb(52,58,64);
+    background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
 }
