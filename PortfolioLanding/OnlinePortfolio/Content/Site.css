@@ -24,6 +24,12 @@
     background-color: #f9f9f9;
 }
 
+#Portrait{
+    height: 10em;
+    width:10em;
+    background: yellow;
+}
+
 /*KeySkillsSection*/
 #KeySkills {
     background-image: url(../Images/bg-keySkills.jpg);
@@ -59,4 +65,23 @@
     color: #1f4c52; 
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
+}
+
+/* Contact Section */
+
+#IconContainer {
+    width: 5em;
+    height: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #1f4c52;
+    background-color: #f9f9f9;
+}
+    #IconContainer a {
+        color: #1f4c52;
+    }
+
+#ContactSocial {
+    background: rgb(52,58,64);
+    background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
 }

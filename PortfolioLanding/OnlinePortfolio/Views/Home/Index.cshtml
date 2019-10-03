@@ -30,9 +30,12 @@
 @* SECTION: AboutMe *@
 <section id="AboutMe" class="py-5 container"><!--AboutMeContainer-->
     <div class="row text-center mb-3 mt-5"><!--Row-->
-        <div id="ImageContainer" class="col-12 mb-5"><!--ImageContainer-->
+        <div class="col-12 mb-5"><!--ImageContainer-->
 
-            <i class="far fa-user-circle fa-10x"></i><!--Image/(TODO:InsertPicture)-->
+            <div id="Portrait" class="mx-auto rounded-circle pt-5">
+                Portrait <br />
+                Placeholder
+            </div>
 
         </div><!--/ImageContainer-->
         <div id="BioContainer" class="offset-1 col-10 lead"><!--BioContainer(TODO:InserBio)-->
@@ -58,7 +61,7 @@
 
 @* SECTION: KeySkills *@
 <section id="KeySkills" class="text-center pt-3 pb-3 container-fluid"><!--KeySkillsContainer-->
-    <div id="IconContainer" class="row pt-0"><!--Row-->
+    <div id="KeySkillsContainer" class="row pt-0"><!--Row-->
 
         <h3 id="KeySkillsTitle" class="col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center"><!--TitleContainer-->
             Key Skills<!--SectionTitle/-->
@@ -110,13 +113,14 @@
 
 </section><!--/KeySkillsContainer-->
 
+
 @* SECTION: Projects *@
 <section id="Projects" class="py-5"><!--ProjectsContainer-->
     <div class="container">
         <div class="row"><!--Row-->
 
             <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center"><!--TitleColumn-->
-                <h3 id="ProjectsTitle" class="display-4 mt-5 pb-2 font-weight-bold text-dark"><!--SectionTitle-->
+                <h3 id="ProjectsTitle" class="display-4 mt-5 pb-2 font-weight-bold"><!--SectionTitle-->
                     Recent Projects
                 </h3><!--/SectionTitle-->
             </div><!--/TitleColumn--><div class="col-md-2 col-xl-3"></div><!--Filler-->
@@ -194,7 +198,7 @@
                 </div><!--/NestedRow-->
             </div><!--/Project#1Column-->
 
-            <div class="col-10 offset-1 mt-4"><!--Project#2-->
+            <div class="col-10 offset-1 mt-4 mb-5"><!--Project#2-->
                 <div class="row"><!--NestedRow-->
                     <div class="col-12 d-xl-none bg-dark"><!--ImageColumn[DisplayedBelowXL]-->
 
@@ -227,6 +231,28 @@
 </section>
 
 
+@* SECTION: ContactSocial *@
+<div id="ContactSocial" class="container-fluid d-flex justify-content-center bg-dark py-3">
+
+    <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz">
+        <a href="http://www.linkedin.com/in/alican-demirtas-7bb502187/">
+            <i id="IconSocial" class="fab fa-linkedin-in fa-3x"></i>
+        </a>
+    </div>
+
+    <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz">
+        <a href="http://github.com/d3m1rt45">
+            <i id="IconSocial" class="fab fa-github fa-4x"></i>
+        </a>
+    </div>
+
+    <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz">
+        <a href="mailto:d3m1rt45@outlook.com">
+            <i id="IconSocial" class="fas fa-at fa-4x"></i>
+        </a>
+    </div>
+  
+</div>
 
 
 
