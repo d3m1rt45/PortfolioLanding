@@ -158,3 +158,46 @@
     background: rgb(249,249,249);
     background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
 }
+
+
+
+/*SIDEBAR*/
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    position: fixed;
+}
+
+    #sidebar-wrapper .sidebar-heading {
+        padding: 0.875rem 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    #sidebar-wrapper .list-group {
+        width: 10rem;
+    }
+
+#page-content-wrapper {
+    min-width: 99vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+    position: fixed;
+}
+
+#ToggleMenu {
+    position: fixed;
+    left: 1.5em;
+    top: 1.5em;
+    background-color: #1f4c52;
+    outline-color: white;
+}
+    #ToggleMenu i {
+        color: #f9f9f9;
+    }
