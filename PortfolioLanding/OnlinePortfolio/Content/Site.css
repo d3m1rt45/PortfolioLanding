@@ -88,6 +88,52 @@
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
 }
 
+#SeeCode, #SeeLive {
+    color: #1f4c52;
+    background-color: #f9f9f9;
+    
+}
+    #SeeCode:hover, #SeeLive:hover {
+        background-color: #1f4c52;
+        color: white;
+    }
+
+
+
+#ProjectContainer .row .col-12 {
+    min-height: 18em;
+    outline: solid;
+    outline-color: #1f4c52;
+}
+
+#ProjectOneImg {
+    background-image: url(../Images/portfolio-1.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ProjectTwoImg {
+    background-image: url(../Images/portfolio-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ProjectThreeImg {
+    background-image: url(../Images/portfolio-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ProjectFourImg {
+    background-image: url(../Images/portfolio-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Contact Section */
 
 #IconContainer {
