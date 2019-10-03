@@ -22,12 +22,33 @@
 /*AboutSection*/
 #AboutMe {
     background-color: #f9f9f9;
+    background-image: url(../Images/bg-Projects.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#Portrait{
-    height: 10em;
-    width:10em;
-    background: yellow;
+#Portrait {
+    height: 12em;
+    width: 12em;
+    box-shadow: 0 0 3pt 3pt #1f4c52;
+    background-image: url(../Images/portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#CVButton{
+    background-color: #f9f9f9;
+}
+    #CVButton:hover {
+        background-color: #1f4c52;
+    }
+
+#BioContainer {
+    color: #1f4c52;
+    background: rgb(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
 }
 
 /*KeySkillsSection*/
@@ -81,7 +102,13 @@
         color: #1f4c52;
     }
 
-#ContactSocial {
+#ContactMe {
     background: rgb(52,58,64);
     background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
+}
+
+#ContactMeTitle {
+    color: #1f4c52;
+    background: rgb(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
 }
