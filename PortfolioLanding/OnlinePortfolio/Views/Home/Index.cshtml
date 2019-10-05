@@ -2,334 +2,265 @@
     ViewBag.Title = "Alican Demirtas";
 }
 
+@*
+    TODOS:
+    -Implement Some Form of Navigation
+    -Add Picture and Links for Projects as You Complete Them
+*@  
 
 
-        @* SECTION: PageHead *@
-        <section id="Head" class="d-flex justify-content-center align-items-center">
-            <!--PageHead-->
-            <div class="d-block text-center pb-5">
-                <!--HeadContainer-->
+<section id="Head" class="d-flex justify-content-center align-items-center">
+    <article class="Main d-block text-center pb-5">
 
-                <h1 class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
-                    <!--FullName-->
-                    Alican Demirtas
-                </h1><!--/FullName-->
+        <h1 id="FullName" class="text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
+            Alican Demirtas
+        </h1><!--/#FullName-->
 
-                <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
-                    <!--Profession-->
-                    .NET Developer
-                </h3><!--/Profession-->
+        <h3 id="Profession" class="text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
+            .NET Developer
+        </h3><!--/#Profession-->
 
-                <div class="animated fadeInUp delay-2s mt-5">
-                    <!--Animation:FadeInUp-->
-                    <div class="animated wobble delay-2s">
-                        <!--Animation:Wobble-->
+        <div class="Animation fadeInUp animated delay-2s mt-5">
+            <div class="Animation wobble animated delay-2s">
 
-                        <button id="WhoButton" onclick="smoothScroll('AboutMe')" class="btn btn-outline-light py-2 px-3">
-                            <!--FindOutMore-->
-                            <span class="h3">Who?!</span>
-                        </button><!--/FindOutMore-->
+                <a id="AboutButton" href="#About" class="btn btn-outline-light py-2 px-3">
+                    <span class="Text h3">Who?!</span><!--/.Text-->
+                </a><!--/#AboutButton-->
 
-                    </div><!--/Animation:Wobble-->
-                </div><!--/Animation:FadeInUp-->
-            </div><!--/HeadContainer-->
-        </section><!--/PageHead-->
-        @* SECTION: AboutMe *@
-        <section id="AboutMe" class="py-5 container-fluid">
-            <!--AboutMeContainer-->
-            <div class="row text-center mb-3 mt-4">
-                <!--Row-->
-                <div class="col-12 mb-5">
-                    <!--ImageContainer-->
+            </div><!--/.Animation-->
+        </div><!--/.Animation-->
 
-                    <div id="Portrait" class="mx-auto rounded-circle">
+    </article><!--/.Main-->
+</section><!--/#Head-->
 
-                    </div>
+<section id="About" class="py-5 container-fluid">
+    <article class="Main row text-center mb-3 mt-4">
+        
+        <div id="Portrait" class="col-12 mb-5">
+            <div class="Image mx-auto rounded-circle"></div><!--.Image/-->
+        </div><!--/#Portrait-->
+        
+        <div id="Bio" class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 pb-2 pt-1 mb-4">
+            <span class="Text lead font-weight-bold">
+                I am a self-taught web developer with more than a year of experience developing software.<br />
+                I finally feel ready to look for a job in the field, and I am looking for a company<br />
+                that will provide a challanging environment in which I may be able to learn and grow.<br />
+                Despite my lack of experience, there is nothing I cannot figure out how to make work, <br />
+                and I am looking to bring value to the table from the moment I walk in.
+            </span><!--/.Text-->
+        </div><!--/#Bio-->
 
-                </div><!--/ImageContainer-->
-                <div id="BioContainer" class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 pb-2 pt-1 mb-4">
-                    <!--BioContainer(TODO:InserBio)-->
+        <div id="DownloadCv" class="col-12">
+            <button class="Button btn btn-outline-dark py-2 px-3 mt-4 mb-2 mx-auto" onclick="#TODO:DOWNLOAD CV#">
+                <span class="Text h3 mb-0">Download CV</span><!--/.Text-->
+            </button><!--/.Button-->
+        </div><!--/.DownloadCv-->
 
-                    <span class="lead font-weight-bold">
-                        I am a self-taught web developer with more than a year of experience developing software.<br />
-                        I finally feel ready to look for a job in the field, and I am looking for a company<br />
-                        that will provide a challanging environment in which I may be able to learn and grow.<br />
-                        Despite my lack of experience, there is nothing I cannot figure out how to make work, <br />
-                        and I am looking to bring value to the table from the moment I walk in.
-                    </span>
+    </article><!--/.Main-->
+</section><!--/#About-->
 
-                </div><!--/Bio-->
+<section id="Skills" class="text-center pt-3 pb-3 container-fluid">
+    <article class="Main pt-0">
 
-                <div class="col-12">
-                    <!--CvButtonContainer-->
-                    <button id="CVButton" onclick="#TODO:DOWNLOAD CV#" class="btn btn-outline-dark py-2 px-3 mt-4 mb-2 mx-auto">
-                        <!--DownloadCvButton-->
-                        <span class="h3 mb-0">Download CV</span><!--ButonText/-->
-                    </button><!--DownloadCvButton-->
-                </div><!--/CvButtonContainer-->
-            </div><!--/Row-->
-
-        </section><!--/AboutMeContainer-->
-        @* SECTION: KeySkills *@
-        <section id="KeySkills" class="text-center pt-3 pb-3 container-fluid">
-            <!--KeySkillsContainer-->
-            <div id="KeySkillsContainer" class="row pt-0">
-                <!--Row-->
-
-                <h3 id="KeySkillsTitle" class="col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center">
-                    <!--TitleContainer-->
-                    Key Skills
-                </h3><!--/TitleContainer-->
-                <div class="col-xl-4 col-3"></div><!--ColumnFiller/-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#1-->
-                    <i id="SkillIcon" class="far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-2">HTML / CSS / JS</h3><!--Name/-->
-                    <h6>Web Development Fundamentals</h6><!--Description/-->
-                </div><!--/KeySkill#1-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#2-->
-                    <i id="SkillIcon" class="fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-1">C# .NET</h3><!--Name/-->
-                    <h6>Object Oriented Programming</h6><!--Description/-->
-                </div><!--/KeySkill#2-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#3-->
-                    <i id="SkillIcon" class="fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-2">ASP.NET MVC 5</h3><!--Name/-->
-                    <h6>Model-View-Controller Pattern</h6><!--Description/-->
-                </div><!--/KeySkill#3-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#4-->
-                    <i id="SkillIcon" class="fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-2">SQL Server 2016</h3><!--Name/-->
-                    <h6>Relational Database Development</h6><!--Description/-->
-                </div><!--/KeySkill#4-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#5-->
-                    <i id="SkillIcon" class="fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-2">Entity Framework</h3><!--Name/-->
-                    <h6>Object Relational Mapping (LINQ)</h6><!--Description/-->
-                </div><!--KeySkill#5-->
-
-                <div class="col-6 col-md-4 col-xl-2 text-light">
-                    <!--KeySkill#6-->
-                    <i id="SkillIcon" class="fab fa-bootstrap fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--Icon/-->
-                    <h3 class="mb-2">Bootstrap / jQuery</h3><!--Name/-->
-                    <h6>Responsive and Interactive Design</h6><!--Description-->
-                </div><!--/KeySkill#6-->
-
-            </div><!--/Row-->
-
-            <button id="ProofButton" onclick="smoothScroll('Projects')" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 d-inline-block">
-                <!--FindOutMore-->
-                <span class="h3 mb-0">See Projects</span>
-            </button><!--/FindOutMore-->
-
-        </section><!--/KeySkillsContainer-->
-        @* SECTION: Projects *@
-        <section id="Projects" class="pt-5 pb-3">
-            <!--ProjectsContainer-->
-            <div class="container">
-                <div class="row">
-                    <!--Row-->
-
-                    <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
-                        <!--TitleColumn-->
-                        <h3 id="ProjectsTitle" class="display-4 pb-2 mt-3 font-weight-bold">
-                            <!--SectionTitle-->
-                            Solo Projects
-                        </h3><!--/SectionTitle-->
-                    </div><!--/TitleColumn--><div class="col-md-2 col-xl-3"></div><!--Filler-->
-
-                    <div id="ProjectContainer" class="col-10 offset-1 mt-4">
-                        <!--Project#1-->
-                        <div class="row">
-                            <!--NestedRow-->
-                            <div id="ProjectOneImg" class="col-12 col-xl-4 bg-dark">
-                                <!--ImageColumn-->
-
-                            </div><!--/ImageColumn-->
-                            <div class="col-12 col-xl-8 bg-light py-4 px-3 text-center">
-                                <!--Column-->
-
-                                <h4>Seneca Online Bookstore</h4>
-
-                                <p class="lead">
-                                    <!--ProjectDescription/(TODO:InsertDescription)-->
-                                    An interactive and responsive online bookstore application with an underlying relational database.
-                                    Fully functional with a purchase page, a search bar and a sort by DDL.
-                                    Generates pages of books according to genres, authors, search criteria and ISBN (id).
-                                </p><!--/ProjectDescription-->
-
-                                <a id="SeeCode" href="https://github.com/d3m1rt45/sample-bookstore" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeCode-->
-                                    <span class="h5 mb-0"><i class="fab fa-github"></i> See Code</span>
-                                </a><!--/SeeCode-->
-                                <a id="SeeLive" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeLive-->
-                                    <span class="h5 mb-0"><i class="fas fa-globe"></i> See Live</span>
-                                </a><!--/SeeLive-->
-
-                            </div><!--/Column-->
-                        </div><!--/NestedRow-->
-                    </div><!--/Project#1-->
-
-                    <div id="ProjectContainer" class="col-10 offset-1 mt-4">
-                        <!--Project#2-->
-                        <div class="row">
-                            <!--NestedRow-->
-                            <div id="ProjectTwoImg" class="col-12 d-xl-none bg-dark">
-                                <!--ImageColumn[DisplayedBelowXL]-->
-
-                            </div><!--/ImageColumn[DisplayedBelowXL]-->
-
-                            <div class="col-12 col-xl-8 bg-light py-2 px-3 text-center">
-                                <!--Column-->
-
-                                <p class="lead">
-                                    <!--ProjectDescription/(TODO:InsertDescription)-->
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                </p><!--/ProjectDescription-->
-
-                                <a id="SeeCode" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeCodeButton-->
-                                    <span class="h5 mb-0"><i class="fab fa-github"></i> See Code</span>
-                                </a><!--/SeeCodeButton-->
-                                <a id="SeeLive" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeLive-->
-                                    <span class="h5 mb-0"><i class="fas fa-globe"></i> See Live</span>
-                                </a><!--/SeeLive-->
-
-                            </div><!--/Column-->
-
-                            <div id="ProjectTwoImg" class="d-none d-xl-inline-block col-12 col-xl-4 bg-dark">
-                                <!--ImageColumn[DisplayedAtXL]-->
-
-                            </div><!--/ImageColumn[DisplayedAtXL]-->
-                        </div><!--/NestedRow-->
-                    </div><!--/Project#2-->
-
-                    <div id="ProjectContainer" class="col-10 offset-1 mt-4">
-                        <!--Project#3Column-->
-                        <div class="row">
-                            <!--NestedRow-->
-                            <div id="ProjectThreeImg" class="col-12 col-xl-4 bg-dark">
-                                <!--ImageColumn-->
-
-                            </div><!--/ImageColumn-->
-                            <div class="col-12 col-xl-8 bg-light py-2 px-3 text-center">
-                                <!--Column-->
-
-                                <p class="lead">
-                                    <!--ProjectDescription/(TODO:InsertDescription)-->
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                </p><!--/ProjectDescription-->
+        <h4 class="Header col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center">
+            Key Skills
+        </h4><!--/.Header-->
+        <div class="Filler col-xl-4 col-3"></div><!--.Filler/-->
 
 
-                                <a id="SeeCode" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeCode-->
-                                    <span class="h5 mb-0"><i class="fab fa-github"></i> See Code</span>
-                                </a><!--/SeeCode-->
-                                <a id="SeeLive" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeLive-->
-                                    <span class="h5 mb-0"><i class="fas fa-globe"></i> See Live</span>
-                                </a><!--/SeeLive-->
+        <div class="Body row">
 
-                            </div><!--/Column-->
-                        </div><!--/NestedRow-->
-                    </div><!--/Project#3Column-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon far fa-window-restore fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
+                <h3 class="Name mb-2">HTML / CSS / JS</h3><!--.Name/-->
+                <h6 class="Description">Web Development Fundamentals</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                    <div id="ProjectContainer" class="col-10 offset-1 mt-4 mb-5">
-                        <!--Project#4-->
-                        <div class="row">
-                            <!--NestedRow-->
-                            <div id="ProjectFourImg" class="col-12 d-xl-none bg-dark">
-                                <!--ImageColumn[DisplayedBelowXL]-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon fas fa-code fa-7x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
+                <h3 class="Name mb-1">C# .NET</h3><!--.Name/-->
+                <h6 class="Description">Object Oriented Programming</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                            </div><!--/ImageColumn[DisplayedBelowXL]-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon fas fa-laptop-code fa-7x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                <h3 class="Name mb-1">ASP.NET MVC 5</h3><!--.Name/-->
+                <h6 class="Description">Model-View-Controller Pattern</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                            <div class="col-12 col-xl-8 bg-light py-2 px-3 text-center">
-                                <!--Column-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon fas fa-server fa-7x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                <h3 class="Name mb-1">SQL Server 2016</h3><!--.Name/-->
+                <h6 class="Description">Relational Database Development</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                                <p class="lead">
-                                    <!--ProjectDescription/(TODO:InsertDescription)-->
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                    Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
-                                </p><!--/ProjectDescription-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon fab fa-etsy fa-7x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                <h3 class="Name mb-1">Entity Framework</h3><!--.Name/-->
+                <h6 class="Description">Object Relational Mapping (LINQ)</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                                <a id="SeeCode" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeCode-->
-                                    <span class="h5 mb-0"><i class="fab fa-github"></i> See Code</span>
-                                </a><!--/SeeCode-->
-                                <a id="SeeLive" href="###" target="_blank"
-                                   class="btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block">
-                                    <!--SeeLive-->
-                                    <span class="h5 mb-0"><i class="fas fa-globe"></i> See Live</span>
-                                </a><!--/SeeLive-->
+            <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                <i class="Icon fab fa-bootstrap fa-7x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                <h3 class="Name mb-1">Bootstrap / jQuery</h3><!--.Name/-->
+                <h6 class="Description">Responsive and Interactive Design</h6><!--.Description/-->
+            </div><!--/.Skill-->
 
-                            </div><!--/Column-->
-
-                            <div id="ProjectFourImg" class="d-none d-xl-inline-block col-12 col-xl-4 bg-dark">
-                                <!--ImageColumn[DisplayedAtXL]-->
-
-                            </div><!--/ImageColumn[DisplayedAtXL]-->
-                        </div><!--/NestedRow-->
-                    </div><!--/Project#4-->
-                </div><!--/Row-->
-            </div>
-        </section>
+        </div><!--/.Body-->
 
 
-        @* SECTION: ContactSocial *@
-        <div id="ContactMe" class="container-fluid bg-dark py-3 border-top border-dark">
+        <a id="ProjectsButton" href="#Projects" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 d-inline-block">
+            <span class="Text h3 mb-0">See Projects</span><!--.Text/-->
+        </a><!--/#ProjectsButton-->
 
-            <h4 id="ContactMeTitle" class="col-6 offset-3 col-lg-4 offset-lg-4 col-xl-2 offset-xl-5 text-center font-weight-bold mt-0 mb-3 pb-1">
-                <!--TitleContainer-->
-                Find Me
-            </h4><!--/TitleContainer--> <div class="col-xl-4 col-3"></div><!--ColumnFiller/-->
+    </article><!--/.Main-->
+</section><!--/#Skills-->
 
-            <div class="col-12 d-flex justify-content-center">
-                <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
-                    <a href="http://www.linkedin.com/in/alican-demirtas-7bb502187/" target="_blank">
-                        <i id="IconSocial" class="fab fa-linkedin-in fa-3x"></i>
-                    </a>
-                </div>
+<section id="Projects" class="pt-5 pb-3">
+    <div class="SectionContainer container">
+        <div class="SectionRow row">
 
-                <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
-                    <a href="http://github.com/d3m1rt45" target="_blank">
-                        <i id="IconSocial" class="fab fa-github fa-4x"></i>
-                    </a>
-                </div>
+            <div class="Header col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center mb-4 mt-2">
+                <h4 class="Text display-4 pb-2 mt-2 font-weight-bold">Solo Projects</h4><!--.Text/-->
+            </div><!--/.Header-->
+            <div class="Filler col-md-2 col-xl-3"></div><!--.Filler/-->
 
-                <div id="IconContainer" class="d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
-                    <a href="mailto:d3m1rt45@outlook.com" target="_blank">
-                        <i id="IconSocial" class="fas fa-at fa-4x"></i>
-                    </a>
-                </div>
-            </div>
 
-        </div>
+            <article id="ProjectOne" class="col-10 offset-1 mt-4">
+                <div class="Project row">
+                    <div class="Image col-12 col-xl-4 bg-dark"></div><!--.Image/-->
+                    <div class="Body col-12 col-xl-8 bg-light py-4 px-3 text-center">
+                        <h4 class="Name">Seneca Online Bookstore</h4><!--.Name/-->
+                        <p class="Description lead">
+                            An interactive and responsive online bookstore application with an underlying relational database.
+                            Fully functional with a purchase page, a search bar and a sort by DDL.
+                            Generates pages of books according to genres, authors, search criteria and ISBN (id).
+                        </p><!--/.Description-->
+                        <a class="CodeButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/d3m1rt45/sample-bookstore" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
+                        <a class="LiveButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
+                        </a><!--/.LiveButton-->
+                    </div><!--/.Body-->
+                </div><!--/.Project-->
+            </article><!--/#ProjectOne-->
+
+            <article id="ProjectTwo" class="col-10 offset-1 mt-4">
+                <div class="Project row">
+                    <div class="Image col-12 d-xl-none bg-dark"></div><!--.Image/-->    <!--[ Displayed below XL Breakpoint ]-->
+                    <div class="Body col-12 col-xl-8 bg-light py-4 px-3 text-center">
+                        <h4 class="Name">Lorem Ipsum Lorem Ipsum</h4><!--.Name/-->
+                        <p class="Description lead">
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/.Description-->
+                        <a class="CodeButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i>See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
+                        <a class="LiveButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
+                        </a><!--/.LiveButton-->
+                    </div><!--/.Body-->
+                    <div class="Image d-none d-xl-inline-block col-12 col-xl-4 bg-dark"></div><!--.Image/--> <!--[ Displayed at XL Breakpoint ]-->
+                </div><!--/.Project-->
+            </article><!--/#ProjectTwo-->
+
+            <article id="ProjectThree" class="col-10 offset-1 mt-4">
+                <div class="Project row">
+                    <div class="Image col-12 col-xl-4 bg-dark"></div><!--.Image/-->
+                    <div class="Body col-12 col-xl-8 bg-light py-4 px-3 text-center">
+                        <h4 class="Name">Lorem Ipsum Lorem Ipsum</h4><!--.Name/-->
+                        <p class="Description lead">
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/.Description-->
+                        <a class="CodeButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i>See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
+                        <a class="LiveButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
+                        </a><!--/.LiveButton-->
+                    </div><!--/.Body-->
+                </div><!--/.Project-->
+            </article><!--/#ProjectOne-->
+
+            <article id="ProjectFour" class="col-10 offset-1 mt-4 mb-5">
+                <div class="Project row">
+                    <div class="Image col-12 d-xl-none bg-dark"></div><!--.Image/-->    <!--[ Displayed below XL Breakpoint ]-->
+                    <div class="Body col-12 col-xl-8 bg-light py-4 px-3 text-center">
+                        <h4 class="Name">Lorem Ipsum Lorem Ipsum</h4><!--.Name/-->
+                        <p class="Description lead">
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                            Lorem ipsum lorem ipsum loremlorem ipsum lorem.
+                        </p><!--/.Description-->
+                        <a class="CodeButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i>See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
+                        <a class="LiveButton btn btn-outline-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
+                        </a><!--/.LiveButton-->
+                    </div><!--/.Body-->
+                    <div class="Image d-none d-xl-inline-block col-12 col-xl-4 bg-dark"></div><!--.Image/--> <!--[ Displayed at XL Breakpoint ]-->
+                </div><!--/.Project-->
+            </article><!--/#ProjectFour-->
+
+
+        </div><!--/.SectionRow-->
+    </div><!--/.SectionContainer-->
+</section><!--/#Projects-->
+
+<section id="Contact" class="container-fluid bg-dark py-3 border-top border-dark">
+
+    <h4 class="Header col-6 offset-3 col-lg-4 offset-lg-4 col-xl-2 offset-xl-5 text-center font-weight-bold mt-0 mb-3 pb-1">
+        Contact Me
+    </h4><!--/.Header--> 
+    <div class="Filler col-xl-4 col-3"></div><!--.Filler/-->
+
+
+    <div class="Body col-12 d-flex justify-content-center">
+
+        <div class="Social d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
+            <a class="Link" href="http://www.linkedin.com/in/alican-demirtas-7bb502187/" target="_blank">
+                <i class="Icon fab fa-linkedin-in fa-3x"></i><!--.Icon/-->
+            </a><!--/.Link-->
+        </div><!--/.Social-->
+
+        <div class="Social d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
+            <a class="Link" href="http://github.com/d3m1rt45" target="_blank">
+                <i class="Icon fab fa-github fa-4x"></i><!--.Icon/-->
+            </a><!--/.Link-->
+        </div><!--/.Social-->
+
+        <div class="Social d-flex justify-content-center align-items-center rounded-circle my-0 hvr-buzz-out">
+            <a class="Link" href="mailto:d3m1rt45@outlook.com" target="_blank">
+                <i class="Icon fas fa-at fa-4x"></i><!--.Icon/-->
+            </a><!--/.Link-->
+        </div><!--/.Social-->
+
+    </div><!--/.Body-->
+
+</section><!--/#Contact-->
+
+
+@section scripts {
+    <script id="SmoothScroll">
+        $('a[href*="#"]').on('click', function (e) {
+            e.preventDefault()
+
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top,
+                },
+                500,
+                'linear'
+            )
+        })
+    </script><!--/#SmoothScroll-->
+}
 
 
 

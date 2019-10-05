@@ -6,48 +6,16 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/fontawesome")
 </head>
-<body class="bg-light">
-    <div class="d-flex" id="wrapper">
+<body>
 
-        <div class="bg-light border-right pt-5" id="sidebar-wrapper">
-            <!-- Sidebar -->
-            <div class="list-group list-group-flush mt-5">
-                <a href="#" onclick="smoothScroll('Head')" class="list-group-item list-group-item-action bg-light">Home</a>
-                <a href="#" onclick="smoothScroll('AboutMe')" class="list-group-item list-group-item-action bg-light">About</a>
-                <a href="#" onclick="smoothScroll('Projects')" class="list-group-item list-group-item-action bg-light">Projects</a>
-            </div>
-        </div>
-
-        <div id="page-content-wrapper">
-            <button class="btn btn-primary animated fadeIn delay-3s" id="ToggleMenu">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
-
-            <div>
-                @RenderBody()
-            </div>
-
-        </div>
-        <!-- /#page-content-wrapper -->
-
+    <div>
+        @RenderBody()
     </div>
 
-    <script src="~/Scripts/jQuery/jquery.min.js"></script>
-    <script src="~/Scripts/Bootstrap/bootstrap.bundle.min.js"></script>
-
-    <script>
-        $("#ToggleMenu").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
-
-    @Scripts.Render("~/bundles/smoothScroll")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("scripts", required: false)
-    <script>window.noZensmooth = true</script>
-    <script src="zenscroll-min.js"></script>
+    
 </body>
 </html>

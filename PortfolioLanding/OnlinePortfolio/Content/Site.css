@@ -1,4 +1,4 @@
-﻿/*HeadSection*/
+﻿/*HEAD SECTION*/
 #Head {
     height: 100vh;
     background-image: url(../Images/bg-pageHead.jpg);
@@ -19,8 +19,9 @@
         background-color: #f7f7f7;
     }
 
-/*AboutSection*/
-#AboutMe {
+
+/*ABOUT SECTION*/
+#About {
     background-color: #f9f9f9;
     background-image: url(../Images/bg-Projects.jfif);
     background-position: center;
@@ -28,7 +29,7 @@
     background-repeat: no-repeat;
 }
 
-#Portrait {
+#Portrait .Image {
     height: 12em;
     width: 12em;
     box-shadow: 0 0 3pt 3pt #1f4c52;
@@ -38,43 +39,37 @@
     background-repeat: no-repeat;
 }
 
-#CVButton{
+#DownloadCv .Button {
     background-color: #f9f9f9;
 }
-    #CVButton:hover {
+    #DownloadCv .Button:hover {
         background-color: #1f4c52;
     }
 
-#BioContainer {
+#Bio {
     color: #1f4c52;
     background: rgb(249,249,249);
     background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
 }
 
-/*KeySkillsSection*/
-#KeySkills {
+
+/*KEYSKILLS SECTION*/
+#Skills {
     background-image: url(../Images/bg-keySkills.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#KeySkillsTitle {
+#Skills .Header {
     color: #f7f7f7;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
     width: 35%;
 }
 
-/*#ProofButton {
-    color: #00042b;
-    background-color: #f9f9f9;
-}
-#ProofButton:hover {
-    color: #f9f9f9;
-    background-color: #1f4c52;
-}*/
 
+/*PROJECTS SECTION*/
 #Projects {
     background-image: url(../Images/bg-Projects.jfif);
     background-position: center;
@@ -82,61 +77,73 @@
     background-repeat: no-repeat;
 }
 
-#ProjectsTitle {
+#Projects .Header {
     color: #1f4c52; 
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
 }
 
-#SeeCode, #SeeLive {
+.CodeButton, .LiveButton {
     color: #1f4c52;
     background-color: #f9f9f9;
     
 }
-    #SeeCode:hover, #SeeLive:hover {
+    .CodeButton:hover, .LiveButton:hover {
         background-color: #1f4c52;
         color: white;
     }
 
+#Projects .Name {
+    color: #1f4c52;
+}
 
-
-#ProjectContainer .row .col-12 {
+.Project .Image, .Project .Body {
     min-height: 18em;
     outline: solid;
     outline-color: #1f4c52;
 }
 
-#ProjectOneImg {
+#ProjectOne .Image {
     background-image: url(../Images/portfolio-1.jpg);
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#ProjectTwoImg {
+#ProjectTwo .Image {
     background-image: url(../Images/portfolio-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#ProjectThreeImg {
+#ProjectThree .Image {
     background-image: url(../Images/portfolio-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#ProjectFourImg {
+#ProjectFour .Image {
     background-image: url(../Images/portfolio-4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* Contact Section */
+/*CONTACT SECTION*/
+#Contact {
+    background: rgb(52,58,64);
+    background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
+}
 
-#IconContainer {
+#Contact .Header{
+    color: #1f4c52;
+    background: rgb(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
+}
+
+.Social {
     width: 5em;
     height: 5em;
     margin-left: 1em;
@@ -144,60 +151,7 @@
     color: #1f4c52;
     background-color: #f9f9f9;
 }
-    #IconContainer a {
+    .Social .Link {
         color: #1f4c52;
     }
 
-#ContactMe {
-    background: rgb(52,58,64);
-    background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
-}
-
-#ContactMeTitle {
-    color: #1f4c52;
-    background: rgb(249,249,249);
-    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
-}
-
-
-
-/*SIDEBAR*/
-
-#sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-    position: fixed;
-}
-
-    #sidebar-wrapper .sidebar-heading {
-        padding: 0.875rem 1.25rem;
-        font-size: 1.2rem;
-    }
-
-    #sidebar-wrapper .list-group {
-        width: 10rem;
-    }
-
-#page-content-wrapper {
-    min-width: 99vw;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    margin-left: 0;
-    position: fixed;
-}
-
-#ToggleMenu {
-    position: fixed;
-    left: 1.5em;
-    top: 1.5em;
-    background-color: #1f4c52;
-    outline-color: white;
-}
-    #ToggleMenu i {
-        color: #f9f9f9;
-    }
