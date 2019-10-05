@@ -1,4 +1,53 @@
-﻿/*HEAD SECTION*/
+﻿/*NAVIGATION*/
+body{
+    transition-duration: 0.5s;
+}
+body.on {
+    padding-left: 10rem;
+    transition-duration: 0.5s;
+}
+
+#SidebarToggler {
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 3rem;
+    left: 4rem;
+    border: 1px solid #f9f9f9;
+    z-index: 999;
+    background: rgb(112,140,144);
+    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 77%);
+}
+
+#Sidebar {
+    top: 0;
+    left: -13rem;
+    position: fixed;
+    height: 100vh;
+    width: 13rem;
+    border-right: 1px solid #232325;
+    z-index: 998;
+    transition-duration: 0.5s;
+    background: rgb(35,35,37);
+    background: linear-gradient(0deg, rgba(35,35,37,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
+}
+    #Sidebar.on {
+    left: 0rem;
+    transition-duration: 0.5s;
+    }
+ 
+#Sidebar .Item {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    color: #f9f9f9;
+    margin: 1rem 0 1rem 0;
+}
+    #Sidebar .Item:hover{
+        text-decoration: none;
+    }
+
+/*HEAD SECTION*/
 #Head {
     height: 100vh;
     background-image: url(../Images/bg-pageHead.jpg);
@@ -12,11 +61,11 @@
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
 }
 
-#WhoButton {
+#AboutButton {
     background-color: #232325;
 }
-    #WhoButton:hover {
-        background-color: #f7f7f7;
+    #AboutButton:hover {
+        background-color: #f9f9f9;
     }
 
 
@@ -30,8 +79,8 @@
 }
 
 #Portrait .Image {
-    height: 12em;
-    width: 12em;
+    height: 12rem;
+    width: 12rem;
     box-shadow: 0 0 3pt 3pt #1f4c52;
     background-image: url(../Images/portrait.jpg);
     background-position: center;
@@ -98,7 +147,7 @@
 }
 
 .Project .Image, .Project .Body {
-    min-height: 18em;
+    min-height: 18rem;
     outline: solid;
     outline-color: #1f4c52;
 }
@@ -134,7 +183,7 @@
 /*CONTACT SECTION*/
 #Contact {
     background: rgb(52,58,64);
-    background: linear-gradient(90deg, rgba(52,58,64,1) 0%, rgba(31,76,82,1) 45%, rgba(31,76,82,1) 55%, rgba(52,58,64,1) 100%);
+    background: linear-gradient(90deg, rgba(35,35,37,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
 }
 
 #Contact .Header{
@@ -144,14 +193,13 @@
 }
 
 .Social {
-    width: 5em;
-    height: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: #1f4c52;
     background-color: #f9f9f9;
 }
     .Social .Link {
         color: #1f4c52;
     }
-
