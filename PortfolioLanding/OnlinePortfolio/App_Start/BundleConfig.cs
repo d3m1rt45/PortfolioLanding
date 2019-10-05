@@ -23,7 +23,7 @@ namespace OnlinePortfolio
                         "~/Scripts/smooth-scroll.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/Bootstrap/bootstrap.js"));
+                      "~/Scripts/Bootstrap/bootstrap.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
                       "~/Content/FontAwesome/all.css"));
