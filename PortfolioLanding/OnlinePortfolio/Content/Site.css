@@ -16,7 +16,8 @@ body.on {
     border: 1px solid #f9f9f9;
     z-index: 999;
     background: rgb(112,140,144);
-    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 77%);
+    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
+    box-shadow: 0.15rem 0.2rem 0.1rem black;
 }
 
 #Sidebar {
@@ -89,9 +90,11 @@ body.on {
 }
 
 #DownloadCv .Button {
+    color: #1f4c52; 
     background-color: #f9f9f9;
 }
     #DownloadCv .Button:hover {
+        color: #f9f9f9;
         background-color: #1f4c52;
     }
 
@@ -116,7 +119,6 @@ body.on {
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
     width: 35%;
 }
-
 
 /*PROJECTS SECTION*/
 #Projects {
