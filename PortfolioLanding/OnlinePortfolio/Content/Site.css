@@ -39,6 +39,13 @@ body {
         transition-duration: 0.5s;
     }
 
+@media (max-width: 576px) {
+    .Toggler {
+        left: 0;
+        top: 0;
+    }
+}
+
 .Nav {
     top: 0;
     left: -13rem;
