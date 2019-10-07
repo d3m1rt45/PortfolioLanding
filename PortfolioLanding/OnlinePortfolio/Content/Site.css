@@ -19,6 +19,10 @@ body.on {
     background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
     box-shadow: 0.15rem 0.2rem 0.1rem black;
 }
+    #SidebarToggler:hover {
+        color: #1f4c52;
+        background: #f9f9f9;
+    }
 
 #Sidebar {
     top: 0;
