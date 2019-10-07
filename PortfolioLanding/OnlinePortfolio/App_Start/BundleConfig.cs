@@ -9,7 +9,7 @@ namespace OnlinePortfolio
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jQuery/jquery.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jQuery/jquery.validate*"));
@@ -23,7 +23,7 @@ namespace OnlinePortfolio
                         "~/Scripts/smooth-scroll.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/Bootstrap/bootstrap.js"));
+                      "~/Scripts/Bootstrap/bootstrap.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
                       "~/Content/FontAwesome/all.css"));

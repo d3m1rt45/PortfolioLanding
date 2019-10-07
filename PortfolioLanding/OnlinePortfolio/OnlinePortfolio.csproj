@@ -1694,13 +1694,16 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\bg-callout.jpg" />
+    <Content Include="Images\bg-contact.jpg" />
     <Content Include="Images\bg-pageHeadzz.jpg" />
     <Content Include="Images\bg-pageHead.jpg" />
     <Content Include="Images\bg-keySkills.jpg" />
+    <Content Include="Images\bg-projects.jfif" />
     <Content Include="Images\portfolio-1.jpg" />
     <Content Include="Images\portfolio-2.jpg" />
     <Content Include="Images\portfolio-3.jpg" />
     <Content Include="Images\portfolio-4.jpg" />
+    <Content Include="Images\portrait.jpg" />
     <Content Include="Scripts\Bootstrap\bootstrap.bundle.js" />
     <Content Include="Scripts\Bootstrap\bootstrap.bundle.min.js" />
     <Content Include="Scripts\Bootstrap\bootstrap.js" />
@@ -1719,6 +1722,7 @@
     <Content Include="Scripts\jQuery\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jQuery\jquery.min.map" />
     <Content Include="Scripts\jQuery\jquery.slim.min.map" />
+    <Content Include="Scripts\zenscroll.js" />
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
@@ -1752,7 +1756,6 @@
     <Content Include="Scripts\jQuery\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jQuery\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Modernizr\modernizr-2.8.3.js" />
-    <Content Include="Scripts\smooth-scroll.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
