@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/fontawesome")
+</head>
+<body>
+
+    <div id="Sidebar">
+        <button class="Toggler btn btn-dark animated fadeIn delay-3s">
+            <i class="Icon far fa-compass fa-3x"></i><!--.Icon/-->
+        </button><!--/Toggler-->
+        <div class="Nav d-flex align-items-center text-center">
+            <div class="Links d-block">
+                <a class="HomeLink" href="#Head">
+                    <div class="Item hvr-shadow-radial">Home</div><!--.Item/-->
+                </a><!--/.Link-->
+                <a class="AboutLink" href="#About">
+                    <div class="Item hvr-shadow-radial">About</div><!--.Item/-->
+                </a><!--/.Link-->
+                <a class="ProjectsLink" href="#Projects">
+                    <div class="Item hvr-shadow-radial">Projects</div><!--.Item/-->
+                </a><!--/.Link-->
+                <a class="ContactLink" href="#Contact">
+                    <div class="Item hvr-shadow-radial">Contact</div><!--.Item/-->
+                </a><!--/.Link-->
+            </div><!--/.LinksContainer-->
+        </div><!--/.Nav-->
+    </div><!--/#Sidebar-->
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+
+    <script class="SidebarScripts">
+        $(".Toggler").click(function () {
+            $(".Nav").toggleClass("on");
+            $("body").toggleClass("on");
+            $(".Toggler").toggleClass("on");
+        })
+    </script><!--/.SidebarScripts-->
+
+</body>
+</html>
