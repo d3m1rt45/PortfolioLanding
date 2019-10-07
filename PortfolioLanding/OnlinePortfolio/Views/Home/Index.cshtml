@@ -2,31 +2,25 @@
     ViewBag.Title = "Alican Demirtas";
 }
 
-@*
-    TODOS:
-    -Add Picture and Links for Projects as You Complete Them
-*@  
-
-
 <section id="Head" class="d-flex justify-content-center align-items-center">
     <article class="Main d-block text-center pb-5">
 
-        <h1 id="FullName" class="d-none d-sm-block text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-2s">
+        <h1 id="FullName" class="d-none d-sm-block text-light display-1 font-weight-bold mb-0 animated fadeInLeft delay-1s">
             Alican Demirtas
         </h1><!--/#FullName--><!--[>= SM]-->
-        <h1 id="FullName" class="d-sm-none d-block text-light display-3 font-weight-bold mb-0">
+        <h1 id="FullName" class="d-sm-none d-block text-light display-5 font-weight-bold mb-0">
             Alican Demirtas
         </h1><!--/#FullName--><!--[< SM]-->
 
-        <h3 id="Profession" class="d-none d-sm-block text-light display-4 mt-0 pb-2 animated fadeInRight delay-2s">
+        <h3 id="Profession" class="d-none d-sm-block text-light display-4 mt-0 pb-2 animated fadeInRight delay-1s">
             .NET Developer
         </h3><!--/#Profession--><!--[>= SM]-->
         <h3 id="Profession" class="d-sm-none d-block text-light display-5 mt-0 pb-2">
             .NET Developer
         </h3><!--/#Profession--><!--[< SM]-->
 
-        <div class="Animation fadeInUp animated delay-3s mt-5">
-            <div class="Animation wobble animated delay-3s">
+        <div class="Animation fadeInUp animated delay-2s mt-5">
+            <div class="Animation wobble animated delay-2s">
 
                 <a id="AboutButton" href="#About" class="btn btn-outline-light py-2 px-3">
                     <span class="Text h3">Who?!</span><!--/.Text-->
@@ -39,15 +33,16 @@
 </section><!--/#Head-->
 
 <section id="About" class="py-5">
-    <div class="SectionContainer container">
-        <article class="Main row text-center mb-4 mt-4">
+
+    <article class="Main container">
+        <div class="MainRow row text-center mb-4 mt-4">
 
             <div id="Portrait" class="col-12 mb-5">
                 <div class="Image mx-auto rounded-circle"></div><!--.Image/-->
             </div><!--/#Portrait-->
 
-            <div id="Bio" class="col-10 offset-1 pb-2 pt-1 mt-2 mb-4">
-                <span class="Text lead font-weight-bold">
+            <div id="Bio" class="col-10 offset-1 pb-2 pt-1 mt-2 mb-5">
+                <span class="Text lead">
                     I am looking to bring value to the table from the moment I walk in.<br />
                     I am a self-taught web developer with more than a year of experience developing software.<br />
                     I finally feel ready to look for a job in the field, and I am looking for a company<br />
@@ -56,72 +51,71 @@
                 </span><!--/.Text-->
             </div><!--/#Bio-->
 
-            <div id="DownloadCv" class="col-12">
-                <button class="Button btn btn-dark py-2 px-3 mt-4 mb-1 mx-auto" onclick="#TODO:DOWNLOAD CV#">
+        </div><!--/.Main-->
+    </article><!--/.Main-->
+
+    <article id="Skills" class="text-center pt-3 pb-3">
+        <div class="SectionContainer container">
+            <div class="Main pt-0">
+
+                <h4 class="Header col-4 offset-4 display-5 mt-0 pb-2 pt-0 mb-0 text-center font-weight-bold">
+                    Key Skills
+                </h4><!--/.Header-->
+                <div class="Filler col-4"></div><!--.Filler/-->
+
+                <div class="SkillsRow row mb-5 pb-3">
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon far fa-window-restore fa-6x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
+                        <h5 class="Name mb-2">HTML / CSS / JS</h5><!--.Name/-->
+                        <h6 class="Description">Web Development Fundamentals</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon fas fa-code fa-6x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
+                        <h5 class="Name mb-1">C# .NET</h5><!--.Name/-->
+                        <h6 class="Description">Object Oriented Programming</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon fas fa-laptop-code fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                        <h5 class="Name mb-1">ASP.NET MVC 5</h5><!--.Name/-->
+                        <h6 class="Description">Model View Controller</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon fas fa-server fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                        <h5 class="Name mb-1">SQL Server 2016</h5><!--.Name/-->
+                        <h6 class="Description">Relational Database Development</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon fab fa-etsy fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                        <h5 class="Name mb-1">Entity Framework</h5><!--.Name/-->
+                        <h6 class="Description">Object Relational Mapping (LINQ)</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                    <div class="Skill col-6 col-md-4 col-xl-2 text-light">
+                        <i class="Icon fab fa-bootstrap fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
+                        <h5 class="Name mb-1">Bootstrap</h5><!--.Name/-->
+                        <h6 class="Description">Mobile-First Responsive Design</h6><!--.Description/-->
+                    </div><!--/.Skill-->
+
+                </div><!--/.Body-->
+
+
+                <a id="ProjectsButton" href="#Projects" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 mx-2 d-inline-block">
+                    <span class="Text h3 mb-0">See Projects</span><!--.Text/-->
+                </a><!--/#ProjectsButton-->
+                <button id="CvButton" class="btn btn-dark py-2 px-3 mt-3 mb-2 mx-2 mx-2" onclick="#TODO:DOWNLOAD CV#">
                     <span class="Text h3 mb-0">Download CV</span><!--/.Text-->
-                </button><!--/.Button-->
-            </div><!--/.DownloadCv-->
+                </button><!--/#CvButton-->
 
-        </article><!--/.Main-->
-    </div><!--/.SectionContainer-->
+            </div><!--/.Main-->
+        </div><!--/.SectionContainer-->
+    </article><!--/#Skills-->
+
 </section><!--/#About-->
-
-<section id="Skills" class="text-center pt-3 pb-3">
-    <div class="SectionContainer container">
-        <article class="Main pt-0">
-
-            <h4 class="Header col-6 offset-3 col-xl-4 offset-xl-4 display-5 mt-0 pb-2 pt-0 mb-0 text-light text-center">
-                Key Skills
-            </h4><!--/.Header-->
-            <div class="Filler col-xl-4 col-3"></div><!--.Filler/-->
-
-            <div class="Body row">
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon far fa-window-restore fa-6x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
-                    <h5 class="Name mb-2">HTML / CSS / JS</h5><!--.Name/-->
-                    <h6 class="Description">Web Development Fundamentals</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon fas fa-code fa-6x mt-4 px-4 pb-3 rounded-circle "></i><!--.Icon/-->
-                    <h5 class="Name mb-1">C# .NET</h5><!--.Name/-->
-                    <h6 class="Description">Object Oriented Programming</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon fas fa-laptop-code fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
-                    <h5 class="Name mb-1">ASP.NET MVC 5</h5><!--.Name/-->
-                    <h6 class="Description">Model View Controller</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon fas fa-server fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
-                    <h5 class="Name mb-1">SQL Server 2016</h5><!--.Name/-->
-                    <h6 class="Description">Relational Database Development</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon fab fa-etsy fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
-                    <h5 class="Name mb-1">Entity Framework</h5><!--.Name/-->
-                    <h6 class="Description">Object Relational Mapping (LINQ)</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-                <div class="Skill col-6 col-md-4 col-xl-2 text-light">
-                    <i class="Icon fab fa-bootstrap fa-6x mt-4 px-4 pb-3 rounded-circle"></i><!--.Icon/-->
-                    <h5 class="Name mb-1">Bootstrap</h5><!--.Name/-->
-                    <h6 class="Description">Mobile-First Responsive Design</h6><!--.Description/-->
-                </div><!--/.Skill-->
-
-            </div><!--/.Body-->
-
-            <a id="ProjectsButton" href="#Projects" class="btn btn-outline-light py-2 px-3 mt-3 mb-2 d-inline-block">
-                <span class="Text h3 mb-0">See Projects</span><!--.Text/-->
-            </a><!--/#ProjectsButton-->
-
-        </article><!--/.Main-->
-    </div><!--/.SectionContainer-->
-</section><!--/#Skills-->
 
 <section id="Projects" class="pt-5 pb-3">
     <div class="SectionContainer container">
@@ -143,12 +137,12 @@
                             Fully functional with a purchase page, a search bar and a sort by DDL.
                             Generates pages of books according to genres, authors, search criteria and ISBN (id).
                         </p><!--/.Description-->
-                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/d3m1rt45/sample-bookstore" target="_blank">
-                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
-                        </a><!--/.CodeButton-->
                         <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
+                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/d3m1rt45/sample-bookstore" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
                     </div><!--/.Body-->
                 </div><!--/.Project-->
             </article><!--/#ProjectOne-->
@@ -163,12 +157,12 @@
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                         </p><!--/.Description-->
-                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
-                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
-                        </a><!--/.CodeButton-->
                         <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
+                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
                     </div><!--/.Body-->
                     <div class="Image d-none d-xl-inline-block col-12 col-xl-4 bg-dark"></div><!--.Image/--> <!--[ Displayed at XL Breakpoint ]-->
                 </div><!--/.Project-->
@@ -184,12 +178,12 @@
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                         </p><!--/.Description-->
-                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
-                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
-                        </a><!--/.CodeButton-->
                         <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
+                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
                     </div><!--/.Body-->
                 </div><!--/.Project-->
             </article><!--/#ProjectOne-->
@@ -204,12 +198,12 @@
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                             Lorem ipsum lorem ipsum loremlorem ipsum lorem.
                         </p><!--/.Description-->
-                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
-                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
-                        </a><!--/.CodeButton-->
                         <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
+                        <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="###" target="_blank">
+                            <span class="Text h5 mb-0"><i class="fab fa-github"></i> See Code</span><!--.Text/-->
+                        </a><!--/.CodeButton-->
                     </div><!--/.Body-->
                     <div class="Image d-none d-xl-inline-block col-12 col-xl-4 bg-dark"></div><!--.Image/--> <!--[ Displayed at XL Breakpoint ]-->
                 </div><!--/.Project-->
@@ -248,19 +242,20 @@
 
 
 @section scripts {
-    <script id="SmoothScroll">
-        $('a[href*="#"]').on('click', function (e) {
+    <script class="SmoothScrollScript">
+        $("a[href*='#']").on("click", function (e) {
             e.preventDefault()
 
-            $('html, body').animate(
+            $("html, body").animate(
                 {
-                    scrollTop: $($(this).attr('href')).offset().top,
+                    scrollTop: $($(this).attr("href")).offset().top,
                 },
                 500,
-                'linear'
+                "linear"
             )
         })
-    </script><!--/#SmoothScroll-->
+    </script><!--/#SmoothScrollScript-->
+    
 }
 
 
