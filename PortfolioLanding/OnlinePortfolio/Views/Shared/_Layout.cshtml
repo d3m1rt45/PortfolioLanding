@@ -9,25 +9,24 @@
 <body>
 
     <div id="Sidebar">
-        <button class="Toggler btn btn-dark animated fadeIn delay-2">
+        <button class="Toggler btn btn-dark animated fadeIn delay-3s">
             <i class="Icon far fa-compass fa-3x"></i><!--.Icon/-->
         </button><!--/Toggler-->
-
         <div class="Nav d-flex align-items-center text-center">
-            <div class="LinksContainer d-block">
-                <a class="Link" href="#Head">
+            <div class="Links d-block">
+                <a class="HomeLink" href="#Head">
                     <div class="Item hvr-shadow-radial">Home</div><!--.Item/-->
                 </a><!--/.Link-->
-                <a class="Link" href="#About">
+                <a class="AboutLink" href="#About">
                     <div class="Item hvr-shadow-radial">About</div><!--.Item/-->
                 </a><!--/.Link-->
-                <a class="Link" href="#Skills">
+                <a class="SkillsLink" href="#Skills">
                     <div class="Item hvr-shadow-radial">Skills</div><!--.Item/-->
                 </a><!--/.Link-->
-                <a class="Link" href="#Projects">
+                <a class="ProjectsLink" href="#Projects">
                     <div class="Item hvr-shadow-radial">Projects</div><!--.Item/-->
                 </a><!--/.Link-->
-                <a class="Link" href="#Contact">
+                <a class="ContactLink" href="#Contact">
                     <div class="Item hvr-shadow-radial">Contact</div><!--.Item/-->
                 </a><!--/.Link-->
             </div><!--/.LinksContainer-->
@@ -44,9 +43,10 @@
     @RenderSection("scripts", required: false)
 
     <script>
-        $("#Sidebar .Toggler").click(function () {
-            $("#Sidebar .Nav").toggleClass("on");
+        $(".Toggler").click(function () {
+            $(".Nav").toggleClass("on");
             $("body").toggleClass("on");
+            $(".Toggler").toggleClass("on");
         })
     </script>
 
