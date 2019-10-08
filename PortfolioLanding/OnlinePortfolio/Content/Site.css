@@ -226,12 +226,12 @@ body {
 .Project .Image, .Project .Body {
     min-height: 18rem;
     outline: solid;
-    outline-color: #1f4c52;
+    outline-color: #f9f9f9;
 }
 
 #ProjectOne .Image {
     background-image: url(../Images/portfolio-1.jpg);
-    background-position: top left;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
