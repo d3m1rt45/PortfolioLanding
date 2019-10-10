@@ -225,8 +225,8 @@ body {
 
 .Project .Image, .Project .Body {
     min-height: 18rem;
-    outline: solid;
-    outline-color: #f9f9f9;
+    outline: solid 0.3rem;
+    outline-color: #1f4c52;
 }
 
 #ProjectOne .Image {
