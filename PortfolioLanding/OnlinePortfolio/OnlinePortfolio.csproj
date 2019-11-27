@@ -1699,9 +1699,9 @@
     <Content Include="Images\bg-pageHead.jpg" />
     <Content Include="Images\bg-keySkills.jpg" />
     <Content Include="Images\bg-projects.jfif" />
-    <Content Include="Images\portfolio-1.jpg" />
-    <Content Include="Images\portfolio-2.jpg" />
-    <Content Include="Images\portfolio-3.jpg" />
+    <Content Include="Images\portfolio-1.JPG" />
+    <Content Include="Images\portfolio-2.JPG" />
+    <Content Include="Images\portfolio-3.JPG" />
     <Content Include="Images\portfolio-4.jpg" />
     <Content Include="Images\portrait.jpg" />
     <Content Include="Scripts\Bootstrap\bootstrap.bundle.js" />
