@@ -253,7 +253,7 @@ body {
 
 #ProjectTwo .Image {
     background-image: url(../Images/portfolio-2.jpg);
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -266,7 +266,7 @@ body {
 }
 
 #ProjectThree {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 /*#ProjectFour .Image {

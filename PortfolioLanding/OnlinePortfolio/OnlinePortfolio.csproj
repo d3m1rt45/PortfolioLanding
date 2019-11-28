@@ -134,6 +134,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\FontAwesome\all.css" />
     <Content Include="Content\hover.css" />
+    <Content Include="Images\portfolio-3.JPG" />
     <Content Include="Content\webfonts\fa-brands-400.svg" />
     <Content Include="Content\webfonts\fa-regular-400.svg" />
     <Content Include="Content\webfonts\fa-solid-900.svg" />
@@ -149,8 +150,6 @@
     <Content Include="Images\bg-projects.jfif" />
     <Content Include="Images\portfolio-1.JPG" />
     <Content Include="Images\portfolio-2.JPG" />
-    <Content Include="Images\portfolio-3.JPG" />
-    <Content Include="Images\portfolio-4.jpg" />
     <Content Include="Images\portrait.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\zenscroll.js" />
