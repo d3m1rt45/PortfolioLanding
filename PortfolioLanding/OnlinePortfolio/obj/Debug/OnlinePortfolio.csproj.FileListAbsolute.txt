@@ -70,6 +70,7 @@ C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\Online
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\bin\Antlr3.Runtime.pdb
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Debug\OnlinePortfolio.csprojAssemblyReference.cache
+C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Debug\OnlinePortfolio.csproj.CoreCompileInputs.cache
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Debug\OnlinePortfolio.csproj.CopyComplete
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Debug\OnlinePortfolio.dll
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Debug\OnlinePortfolio.pdb
