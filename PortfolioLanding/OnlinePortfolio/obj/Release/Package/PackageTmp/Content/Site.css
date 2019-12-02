@@ -87,7 +87,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#Profession {
+#Profession{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
 }
@@ -112,226 +112,236 @@ body {
         transition-duration: 0.5s;
     }
 
+@media (max-width: 576px) {
 
-/*ABOUT SECTION*/
-#About {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    background-image: url(../Images/bg-keySkills.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-#Portrait .Image {
-    height: 12rem;
-    width: 12rem;
-    box-shadow: 0 0 3pt 3pt #1f4c52;
-    background-image: url(../Images/portrait.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    /*ABOUT SECTION*/
+    #About {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f9f9f9;
+        background-image: url(../Images/bg-keySkills.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-#CvButton {
-    border: 1px solid #f9f9f9;
-    background: rgb(112,140,144);
-    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
-    background-color: #1f4c52;
-    box-shadow: 0.15rem 0.2rem 0.1rem black;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
+    #Portrait .Image {
+        height: 12rem;
+        width: 12rem;
+        box-shadow: 0 0 3pt 3pt #1f4c52;
+        background-image: url(../Images/portrait.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-    #CvButton:hover {
-        color: #1f4c52;
-        background: #f9f9f9;
+    #CvButton {
+        border: 1px solid #f9f9f9;
+        background: rgb(112,140,144);
+        background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
+        background-color: #1f4c52;
+        box-shadow: 0.15rem 0.2rem 0.1rem black;
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
     }
 
-#Bio {
-    color: #f9f9f9;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
-    font-weight: 700;
-}
+        #CvButton:hover {
+            color: #1f4c52;
+            background: #f9f9f9;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+
+    #Bio {
+        color: #f9f9f9;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(31,76,82,1) 30%, rgba(31,76,82,1) 60%, rgba(255,255,255,0) 100%);
+        font-weight: 700;
+    }
 
 
-/*KEYSKILLS SECTION*/
-#Skills .Header {
-    color: #1f4c52;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 50%, rgba(255,255,255,0) 100%);
-    width: 35%;
-}
-
-#ProjectsButton {
-    border: 1px solid #f9f9f9;
-    background: rgb(112,140,144);
-    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
-    background-color: #1f4c52;
-    box-shadow: 0.15rem 0.2rem 0.1rem black;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-    #ProjectsButton:hover {
+    /*KEYSKILLS SECTION*/
+    #Skills .Header {
         color: #1f4c52;
-        background: #f9f9f9;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 50%, rgba(255,255,255,0) 100%);
+        width: 35%;
+    }
+
+    #ProjectsButton {
+        border: 1px solid #f9f9f9;
+        background: rgb(112,140,144);
+        background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
+        background-color: #1f4c52;
+        box-shadow: 0.15rem 0.2rem 0.1rem black;
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
     }
 
-/*PROJECTS SECTION*/
-#Projects {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../Images/bg-Projects.jfif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+        #ProjectsButton:hover {
+            color: #1f4c52;
+            background: #f9f9f9;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
 
-#Projects .Header {
-    color: #1f4c52; 
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
-}
+    /*PROJECTS SECTION*/
+    #Projects {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(../Images/bg-Projects.jfif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-.CodeButton, .LiveButton {
-    border: 1px solid #f9f9f9;
-    background: rgb(112,140,144);
-    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
-    background-color: #1f4c52;
-    box-shadow: 0.15rem 0.2rem 0.1rem black;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
+        #Projects .Header {
+            color: #1f4c52;
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 70%, rgba(255,255,255,0) 100%);
+        }
 
-    .CodeButton:hover, .LiveButton:hover {
-        color: #1f4c52;
-        background: #f9f9f9;
+    .CodeButton, .LiveButton {
+        border: 1px solid #f9f9f9;
+        background: rgb(112,140,144);
+        background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 25%, rgba(35,35,37,1) 100%);
+        background-color: #1f4c52;
+        box-shadow: 0.15rem 0.2rem 0.1rem black;
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
     }
 
-#Projects .Name {
-    color: #1f4c52;
-}
+        .CodeButton:hover, .LiveButton:hover {
+            color: #1f4c52;
+            background: #f9f9f9;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
 
-.Project .Image, .Project .Body {
-    min-height: 18rem;
-    outline: solid;
-    outline-color: #1f4c52;
-}
+    #Projects .Name {
+        color: #1f4c52;
+    }
 
-#ProjectOne .Image {
-    background-image: url(../Images/portfolio-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    .Project .Image, .Project .Body {
+        min-height: 18rem;
+        outline: solid;
+        outline-color: #1f4c52;
+    }
 
-#ProjectTwo .Image {
-    background-image: url(../Images/portfolio-2.jpg);
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    #ProjectOne .Image {
+        background-image: url(../Images/portfolio-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-#ProjectThree .Image {
-    background-image: url(../Images/portfolio-3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    #ProjectTwo .Image {
+        background-image: url(../Images/portfolio-2.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-#ProjectThree {
-    margin-bottom: 4rem;
-}
+    #ProjectThree .Image {
+        background-image: url(../Images/portfolio-3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-/*#ProjectFour .Image {
+    #ProjectThree {
+        margin-bottom: 4rem;
+    }
+
+    /*#ProjectFour .Image {
     background-image: url(../Images/portfolio-4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }*/
 
-/*CONTACT SECTION*/
-#Contact {
-    background: rgb(52,58,64);
-    background: linear-gradient(90deg, rgba(35,35,37,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
-}
+    /*CONTACT SECTION*/
+    #Contact {
+        background: rgb(52,58,64);
+        background: linear-gradient(90deg, rgba(35,35,37,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
+    }
 
-#Contact .Header{
-    color: #1f4c52;
-    background: rgb(249,249,249);
-    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
-}
+        #Contact .Header {
+            color: #1f4c52;
+            background: rgb(249,249,249);
+            background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,0) 100%);
+        }
 
-.Social {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 5rem;
-    width: 5rem;
-    border: 1px solid #f9f9f9;
-    z-index: 999;
-    background: rgb(112,140,144);
-    background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
-    background-color: #1f4c52;
-    box-shadow: 0.15rem 0.2rem 0.1rem black;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-    .Social:hover {
-        color: #1f4c52;
-        background: #f9f9f9;
+    .Social {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid #f9f9f9;
+        z-index: 999;
+        background: rgb(112,140,144);
+        background: radial-gradient(circle, rgba(112,140,144,1) 0%, rgba(31,76,82,1) 50%, rgba(35,35,37,1) 100%);
+        background-color: #1f4c52;
+        box-shadow: 0.15rem 0.2rem 0.1rem black;
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
     }
 
-/*ADDITIONAL RESPONSIVENESS*/
-@media (max-width: 576px) {
-    .Toggler {
-        left: 1.6rem;
-        top: 1.2rem;
-        height: 4rem;
-        width: 4.5rem
-    }
+        .Social:hover {
+            color: #1f4c52;
+            background: #f9f9f9;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
 
-    #Sidebar .Nav {
-        width: 8rem;
-    }
+    /*ADDITIONAL RESPONSIVENESS*/
+    @media (max-width: 576px) {
+        .Toggler {
+            left: 1.6rem;
+            top: 1.2rem;
+            height: 3rem;
+            width: 3.5rem;
+            font-size: 7pt;
+        }
 
-    body.on {
-        padding-left: 8rem;
-    }
+        #AboutButton span {
+            font-size: 16pt;
+        }
 
-    .Social {
-        width:4rem;
-        height:4rem;
+        #Sidebar .Nav {
+            width: 8rem;
+        }
+
+        body.on {
+            padding-left: 8rem;
+        }
+
+        .Social {
+            width: 4rem;
+            height: 4rem;
+        }
     }
-}
