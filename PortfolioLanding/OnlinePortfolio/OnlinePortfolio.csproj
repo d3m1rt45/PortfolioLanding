@@ -140,7 +140,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\bg-callout.jpg" />
     <Content Include="Images\bg-contact.jpg" />
-    <Content Include="Images\bg-pageHeadzz.jpg" />
     <Content Include="Images\bg-pageHead.jpg" />
     <Content Include="Images\bg-keySkills.jpg" />
     <Content Include="Images\bg-projects.jfif" />
@@ -173,6 +172,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Images\DemirtasResume.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
