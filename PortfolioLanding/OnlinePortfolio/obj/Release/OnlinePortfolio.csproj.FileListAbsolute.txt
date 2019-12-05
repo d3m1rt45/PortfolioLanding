@@ -73,3 +73,4 @@ C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\Online
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Release\OnlinePortfolio.csproj.CopyComplete
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Release\OnlinePortfolio.dll
 C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Release\OnlinePortfolio.pdb
+C:\Users\d3m1r\OneDrive\D3M1RT45\GitHub\PortfolioLanding\PortfolioLanding\OnlinePortfolio\obj\Release\OnlinePortfolio.csprojAssemblyReference.cache

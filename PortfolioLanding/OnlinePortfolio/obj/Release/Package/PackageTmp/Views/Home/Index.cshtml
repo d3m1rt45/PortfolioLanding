@@ -5,29 +5,31 @@
 <section id="Head" class="d-flex justify-content-center align-items-center">
     <article class="Main d-block text-center pb-5">
 
-        <h1 id="FullName" class="d-none d-sm-block text-light display-1 font-weight-bold mb-0">
+        <h1 class="FullName d-sm-none d-block mb-0">
             Alican Demirtas
-        </h1><!--/#FullName--><!--[>= SM]-->
-        <h1 id="FullName" class="d-sm-none d-block text-light display-5 font-weight-bold mb-0">
+        </h1><!--/#FullName-->
+        <h1 class="FullName animated d-none d-sm-block mb-0">
             Alican Demirtas
-        </h1><!--/#FullName--><!--[< SM]-->
+        </h1><!--/.FullName.animated-->
 
-        <h3 id="Profession" class="d-none d-sm-block text-light display-4 mt-0 pb-2 ">
+        <h2 class="Profession d-sm-none d-block text-light mt-0 pb-2">
             .NET Developer
-        </h3><!--/#Profession--><!--[>= SM]-->
-        <h3 id="Profession" class="d-sm-none d-block text-light display-5 mt-0 pb-2">
+        </h2><!--/#Profession-->
+        <h2 class="Profession animated d-none d-sm-block text-light mt-0 pb-2 ">
             .NET Developer
-        </h3><!--/#Profession--><!--[< SM]-->
+        </h2><!--/.Profession.animated-->
 
-        <div class="OuterAboutAnimation mt-5">
+        <a class="AboutButton animated btn btn-outline-light py-2 px-3 d-sm-none" href="#About">
+            <span class="Text h3">Who?!</span><!--/.Text-->
+        </a><!--/#AboutButton-->
+
+        <div class="OuterAboutAnimation mt-5 d-none d-sm-block">
             <div class="InnerAboutAnimation">
-
-                <a id="AboutButton" href="#About" class="btn btn-outline-light py-2 px-3">
+                <a class="AboutButton animated btn btn-outline-light py-2 px-3" href="#About">
                     <span class="Text h3">Who?!</span><!--/.Text-->
                 </a><!--/#AboutButton-->
-
-            </div><!--/.Animation-->
-        </div><!--/.Animation-->
+            </div><!--/.InnerAboutAnimation-->
+        </div><!--/.OuterAboutAnimation-->
 
     </article><!--/.Main-->
 </section><!--/#Head-->
@@ -35,7 +37,7 @@
 <section id="About" class="py-5">
 
     <article class="Main container">
-        <div class="MainRow row text-center my-5">
+        <div class="MainRow row text-center my-4">
 
             <div id="Portrait" class="col-12 mb-5">
                 <div class="Image mx-auto rounded-circle"></div><!--.Image/-->
@@ -50,12 +52,12 @@
                 </span><!--/.Text-->
             </div><!--/#Bio-->
 
-        </div><!--/.Main-->
+        </div><!--/.MainRow-->
     </article><!--/.Main-->
 
     <article id="Skills" class="text-center pt-1 pb-5">
         <div class="SectionContainer container">
-            <div class="Main pt-0">
+            <div class="Main pt-4">
 
                 <h4 class="Header col-4 offset-4 display-5 mt-0 pb-2 pt-0 mb-0 text-center font-weight-bold">
                     Key Skills
@@ -121,7 +123,7 @@
         <div class="SectionRow row">
 
             <div class="Header col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center mb-4 mt-2">
-                <h4 class="Text display-4 pb-2 mt-2 font-weight-bold">My Projects</h4><!--.Text/-->
+                <h4 class="Text pb-2 mt-2">My Projects</h4><!--.Text/-->
             </div><!--/.Header-->
             <div class="Filler col-md-2 col-xl-3"></div><!--.Filler/-->
 
@@ -134,8 +136,9 @@
                         <p class="Description lead">
                             An interactive and responsive Pizza Store application that grants members points
                             for the money they spend. The user can later use these points to redeem a free medium pizza.
+                            Also has a <em>guest</em> option where the point system is not utilized.
                         </p><!--/.Description-->
-                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="http://blazinpizza.co.uk/" target="_blank">
+                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="http://www.blazinpizza.co.uk/" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
                         <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/demirtasdev/blazinpizzaco" target="_blank">
@@ -156,7 +159,7 @@
                             It has an interface for creating people, venues and setting up events that are
                             based on a certain venue and has certain people invited to them.
                         </p><!--/.Description-->
-                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="http://konneytm.online/" target="_blank">
+                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="http://www.konneytm.online/" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
                         <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/demirtasdev/konneytm" target="_blank">
@@ -178,7 +181,7 @@
                             them in a chosen order. It has all the books categorized under authors and genres, which the
                             user may navigate through the UI.
                         </p><!--/.Description-->
-                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://senecabooks.store" target="_blank">
+                        <a class="LiveButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="http://www.senecabooks.store" target="_blank">
                             <span class="Text h5 mb-0"><i class="fas fa-globe"></i> See Live</span><!--.Text/-->
                         </a><!--/.LiveButton-->
                         <a class="CodeButton btn btn-dark py-2 px-3 mt-3 mb-2 d-inline-block" href="https://github.com/demirtasdev/senecabookstore" target="_blank">
@@ -259,11 +262,11 @@
     
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#FullName.d-none").addClass("animated fadeInLeft delay-1s")
-            $("#Profession.d-none").addClass("animated fadeInRight delay-1s")
+            $(".FullName.animated").addClass("fadeInLeft delay-1s")
+            $(".Profession.animated").addClass("fadeInRight delay-1s")
             $("div.OuterAboutAnimation").addClass("animated fadeInUp delay-2s")
             $("div.InnerAboutAnimation").addClass("animated wobble delay-2s")
-            $("button.Toggler").addClass("animated fadeIn delay-3s")
+            $(".Toggler.animated").addClass("animated fadeIn delay-3s")
         })
     </script>
 }
